@@ -40,73 +40,73 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9t-9j-frc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                         <subviews>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spE-HM-dYT">
-                                                <rect key="frame" x="0.0" y="0.0" width="516" height="76"/>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spE-HM-dYT">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zyK-hA-gPq">
-                                                        <rect key="frame" x="20" y="20" width="476" height="36"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhc-hD-5tr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="454" height="33"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkp-VM-Y4P">
-                                                                <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="30" id="h4d-d1-TkI"/>
-                                                                    <constraint firstAttribute="height" constant="36" id="iC7-1E-OMp"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="홈">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0b-GU-fkb">
-                                                                <rect key="frame" x="55" y="0.0" width="52" height="36"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="무비톡">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ7-5G-zG1">
-                                                                <rect key="frame" x="132" y="0.0" width="87" height="36"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="패스트오더">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEy-va-iyp">
-                                                                <rect key="frame" x="244" y="0.0" width="70" height="36"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="기프트샵">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D98-JD-vzs">
-                                                                <rect key="frame" x="339" y="0.0" width="60" height="36"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="@CGV">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egC-Tl-kGT">
-                                                                <rect key="frame" x="424" y="0.0" width="52" height="36"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <state key="normal" title="이벤트">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QMX-Xa-mkI" userLabel="Text Container">
+                                                                <rect key="frame" x="0.0" y="0.0" width="454" height="33"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srk-Ze-f1N">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <state key="normal" title="홈">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUl-YY-fQ0">
+                                                                        <rect key="frame" x="60" y="0.0" width="45" height="33"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <state key="normal" title="무비톡">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBS-4t-wjo">
+                                                                        <rect key="frame" x="135" y="0.0" width="74" height="33"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <state key="normal" title="패스트오더">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycq-ye-Ck2">
+                                                                        <rect key="frame" x="239" y="0.0" width="59" height="33"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <state key="normal" title="기프트샵">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCX-bk-QDE">
+                                                                        <rect key="frame" x="328" y="0.0" width="51" height="33"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <state key="normal" title="@CGV">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewt-pq-hSx">
+                                                                        <rect key="frame" x="409" y="0.0" width="45" height="33"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <state key="normal" title="이벤트">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.89357954260000005" green="0.36179196829999999" blue="0.31759941580000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="zyK-hA-gPq" secondAttribute="bottom" constant="20" id="Mt7-ns-lEq"/>
-                                                    <constraint firstItem="zyK-hA-gPq" firstAttribute="height" secondItem="spE-HM-dYT" secondAttribute="height" multiplier="0.473684" id="XLF-rf-FeK"/>
-                                                    <constraint firstAttribute="trailing" secondItem="zyK-hA-gPq" secondAttribute="trailing" constant="20" id="dKR-xR-vuV"/>
-                                                    <constraint firstItem="zyK-hA-gPq" firstAttribute="centerX" secondItem="spE-HM-dYT" secondAttribute="centerX" id="lnS-uw-lco"/>
-                                                    <constraint firstItem="zyK-hA-gPq" firstAttribute="top" secondItem="spE-HM-dYT" secondAttribute="top" constant="20" id="tg2-7N-bWI"/>
-                                                    <constraint firstItem="zyK-hA-gPq" firstAttribute="leading" secondItem="spE-HM-dYT" secondAttribute="leading" constant="20" id="zYL-qr-POC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Uhc-hD-5tr" secondAttribute="bottom" id="4os-f3-OX6"/>
+                                                    <constraint firstItem="Uhc-hD-5tr" firstAttribute="height" secondItem="spE-HM-dYT" secondAttribute="height" id="bZJ-e3-d8r"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Uhc-hD-5tr" secondAttribute="trailing" id="cOH-UQ-9ir"/>
+                                                    <constraint firstItem="Uhc-hD-5tr" firstAttribute="leading" secondItem="spE-HM-dYT" secondAttribute="leading" id="lct-H1-Srr"/>
+                                                    <constraint firstItem="Uhc-hD-5tr" firstAttribute="top" secondItem="spE-HM-dYT" secondAttribute="top" id="owq-q7-5Py"/>
                                                 </constraints>
                                             </scrollView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NCn-3q-LER">
-                                                <rect key="frame" x="0.0" y="84" width="414" height="187"/>
+                                                <rect key="frame" x="0.0" y="41" width="414" height="230"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JVd-iK-hDt">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -116,7 +116,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mrl-aa-dAE">
-                                                        <rect key="frame" x="0.0" y="29.5" width="30" height="128"/>
+                                                        <rect key="frame" x="0.0" y="51" width="30" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VHl-fe-YQ2">
                                                             <rect key="frame" x="0.0" y="0.0" width="30" height="128"/>
@@ -125,7 +125,7 @@
                                                         <size key="customSize" width="30" height="128"/>
                                                     </collectionViewCell>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Sfu-Bz-Zab">
-                                                        <rect key="frame" x="40" y="29.5" width="338" height="128"/>
+                                                        <rect key="frame" x="40" y="51" width="338" height="128"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dSG-st-Asb">
                                                             <rect key="frame" x="0.0" y="0.0" width="338" height="128"/>
@@ -140,7 +140,7 @@
                                                         <size key="customSize" width="338" height="128"/>
                                                     </collectionViewCell>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pU5-Or-Ipz">
-                                                        <rect key="frame" x="388" y="29.5" width="128" height="128"/>
+                                                        <rect key="frame" x="388" y="51" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bDh-gD-cdj">
                                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -157,9 +157,71 @@
                                                     <segment title="상영예정"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJY-tb-q4f">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJY-tb-q4f" userLabel="Seg View">
                                                 <rect key="frame" x="0.0" y="317" width="414" height="331"/>
+                                                <subviews>
+                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x35-WV-tvZ" userLabel="Sub Scroll">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9H-Rp-Ypi">
+                                                                <rect key="frame" x="0.0" y="0.0" width="452" height="50"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="HUd-WQ-Ln7" userLabel="Text Container2">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="452" height="50"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daq-I0-3Zt">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="62" height="50"/>
+                                                                                <state key="normal" title="#예매차트">
+                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5d5-vz-k7o">
+                                                                                <rect key="frame" x="91" y="0.0" width="75" height="50"/>
+                                                                                <state key="normal" title="#현재상영작">
+                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxv-Q9-fmp">
+                                                                                <rect key="frame" x="195" y="0.0" width="49" height="50"/>
+                                                                                <state key="normal" title="#특별관">
+                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dm1-Iz-M69">
+                                                                                <rect key="frame" x="273" y="0.0" width="79" height="50"/>
+                                                                                <state key="normal" title="#엔니오 모리">
+                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3X-3L-sQr">
+                                                                                <rect key="frame" x="381" y="0.0" width="71" height="50"/>
+                                                                                <state key="normal" title="#오직 CGV">
+                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="414" id="1d5-Q6-ynP"/>
+                                                            <constraint firstAttribute="trailing" secondItem="V9H-Rp-Ypi" secondAttribute="trailing" id="4PO-zg-kvH"/>
+                                                            <constraint firstItem="V9H-Rp-Ypi" firstAttribute="leading" secondItem="x35-WV-tvZ" secondAttribute="leading" id="9rc-ES-U8A"/>
+                                                            <constraint firstItem="V9H-Rp-Ypi" firstAttribute="top" secondItem="x35-WV-tvZ" secondAttribute="top" id="ObH-r0-2sh"/>
+                                                            <constraint firstAttribute="height" constant="50" id="anb-Ae-GMB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="V9H-Rp-Ypi" secondAttribute="bottom" id="x68-wm-BWf"/>
+                                                            <constraint firstItem="V9H-Rp-Ypi" firstAttribute="height" secondItem="x35-WV-tvZ" secondAttribute="height" id="zIO-r7-DjP"/>
+                                                        </constraints>
+                                                    </scrollView>
+                                                </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="x35-WV-tvZ" secondAttribute="trailing" id="ATs-Br-qyZ"/>
+                                                    <constraint firstItem="x35-WV-tvZ" firstAttribute="leading" secondItem="OJY-tb-q4f" secondAttribute="leading" id="JhT-g1-TDv"/>
+                                                    <constraint firstItem="x35-WV-tvZ" firstAttribute="top" secondItem="OJY-tb-q4f" secondAttribute="top" id="TFI-UG-dfp"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hru-L6-1GN">
                                                 <rect key="frame" x="0.0" y="656" width="414" height="128"/>
@@ -194,15 +256,13 @@
                                         <color key="backgroundColor" red="0.88236123320000004" green="0.88234215969999996" blue="0.88234597439999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="Hru-L6-1GN" firstAttribute="leading" secondItem="NCn-3q-LER" secondAttribute="leading" id="3fb-Kf-PES"/>
-                                            <constraint firstItem="NCn-3q-LER" firstAttribute="top" secondItem="spE-HM-dYT" secondAttribute="bottom" constant="8" id="4HI-Zh-avg"/>
-                                            <constraint firstItem="spE-HM-dYT" firstAttribute="leading" secondItem="Q9t-9j-frc" secondAttribute="leading" id="7H3-A5-cdC"/>
-                                            <constraint firstItem="spE-HM-dYT" firstAttribute="leading" secondItem="Q9t-9j-frc" secondAttribute="leading" id="9FJ-By-AKk"/>
-                                            <constraint firstItem="Hru-L6-1GN" firstAttribute="leading" secondItem="spE-HM-dYT" secondAttribute="leading" id="GzC-Gd-3BE"/>
-                                            <constraint firstItem="spE-HM-dYT" firstAttribute="top" secondItem="Q9t-9j-frc" secondAttribute="top" id="Hgj-lD-LBh"/>
+                                            <constraint firstItem="NCn-3q-LER" firstAttribute="top" secondItem="spE-HM-dYT" secondAttribute="bottom" constant="8" id="Ba4-Zj-2Yc"/>
                                             <constraint firstItem="Hru-L6-1GN" firstAttribute="leading" secondItem="OJY-tb-q4f" secondAttribute="leading" id="J6l-fE-IX5"/>
                                             <constraint firstAttribute="trailing" secondItem="byG-Jc-geV" secondAttribute="trailing" constant="-11" id="Qgp-xu-YHh"/>
                                             <constraint firstItem="OJY-tb-q4f" firstAttribute="top" secondItem="Q9t-9j-frc" secondAttribute="top" constant="317" id="TNJ-wY-Lfq"/>
                                             <constraint firstItem="byG-Jc-geV" firstAttribute="leading" secondItem="Q9t-9j-frc" secondAttribute="leading" constant="-9" id="Tza-vQ-D0U"/>
+                                            <constraint firstAttribute="trailing" secondItem="spE-HM-dYT" secondAttribute="trailing" id="XnP-ro-yRQ"/>
+                                            <constraint firstItem="spE-HM-dYT" firstAttribute="centerX" secondItem="Q9t-9j-frc" secondAttribute="centerX" id="Y9H-fu-hng"/>
                                             <constraint firstAttribute="bottom" secondItem="Hru-L6-1GN" secondAttribute="bottom" constant="24" id="hLq-rm-Ds7"/>
                                             <constraint firstItem="Hru-L6-1GN" firstAttribute="trailing" secondItem="OJY-tb-q4f" secondAttribute="trailing" id="huF-Pd-rbz"/>
                                             <constraint firstItem="byG-Jc-geV" firstAttribute="top" secondItem="NCn-3q-LER" secondAttribute="bottom" constant="17" id="kbo-ab-fA3"/>
@@ -210,6 +270,8 @@
                                             <constraint firstItem="Hru-L6-1GN" firstAttribute="top" secondItem="OJY-tb-q4f" secondAttribute="bottom" constant="8" id="pn6-F5-0gT"/>
                                             <constraint firstItem="Hru-L6-1GN" firstAttribute="trailing" secondItem="NCn-3q-LER" secondAttribute="trailing" id="qFq-9N-DgK"/>
                                             <constraint firstItem="OJY-tb-q4f" firstAttribute="top" secondItem="NCn-3q-LER" secondAttribute="bottom" constant="46" id="qri-O0-zuv"/>
+                                            <constraint firstItem="spE-HM-dYT" firstAttribute="leading" secondItem="Q9t-9j-frc" secondAttribute="leading" id="r7Z-pP-WsD"/>
+                                            <constraint firstItem="spE-HM-dYT" firstAttribute="top" secondItem="Q9t-9j-frc" secondAttribute="top" id="tfE-tE-93z"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -254,6 +316,6 @@
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="navi_pop" width="30.5" height="25"/>
         <image name="navi_ticket" width="25.333333969116211" height="24"/>
-        <image name="pari" width="338" height="128"/>
+        <image name="pari" width="169" height="64"/>
     </resources>
 </document>
