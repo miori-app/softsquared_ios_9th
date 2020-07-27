@@ -40,52 +40,52 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9t-9j-frc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                         <subviews>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spE-HM-dYT">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spE-HM-dYT" userLabel="Menu Hori Scroll">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhc-hD-5tr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="454" height="33"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="454" height="50"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QMX-Xa-mkI" userLabel="Text Container">
-                                                                <rect key="frame" x="0.0" y="0.0" width="454" height="33"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="454" height="50"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srk-Ze-f1N">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <state key="normal" title="홈">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUl-YY-fQ0">
-                                                                        <rect key="frame" x="60" y="0.0" width="45" height="33"/>
+                                                                        <rect key="frame" x="60" y="0.0" width="45" height="50"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <state key="normal" title="무비톡">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBS-4t-wjo">
-                                                                        <rect key="frame" x="135" y="0.0" width="74" height="33"/>
+                                                                        <rect key="frame" x="135" y="0.0" width="74" height="50"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <state key="normal" title="패스트오더">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycq-ye-Ck2">
-                                                                        <rect key="frame" x="239" y="0.0" width="59" height="33"/>
+                                                                        <rect key="frame" x="239" y="0.0" width="59" height="50"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <state key="normal" title="기프트샵">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCX-bk-QDE">
-                                                                        <rect key="frame" x="328" y="0.0" width="51" height="33"/>
+                                                                        <rect key="frame" x="328" y="0.0" width="51" height="50"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <state key="normal" title="@CGV">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </state>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewt-pq-hSx">
-                                                                        <rect key="frame" x="409" y="0.0" width="45" height="33"/>
+                                                                        <rect key="frame" x="409" y="0.0" width="45" height="50"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <state key="normal" title="이벤트">
                                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,10 +103,11 @@
                                                     <constraint firstAttribute="trailing" secondItem="Uhc-hD-5tr" secondAttribute="trailing" id="cOH-UQ-9ir"/>
                                                     <constraint firstItem="Uhc-hD-5tr" firstAttribute="leading" secondItem="spE-HM-dYT" secondAttribute="leading" id="lct-H1-Srr"/>
                                                     <constraint firstItem="Uhc-hD-5tr" firstAttribute="top" secondItem="spE-HM-dYT" secondAttribute="top" id="owq-q7-5Py"/>
+                                                    <constraint firstAttribute="height" constant="50" id="r67-8W-a63"/>
                                                 </constraints>
                                             </scrollView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NCn-3q-LER">
-                                                <rect key="frame" x="0.0" y="41" width="414" height="230"/>
+                                                <rect key="frame" x="0.0" y="58" width="414" height="213"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JVd-iK-hDt">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -116,7 +117,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Mrl-aa-dAE">
-                                                        <rect key="frame" x="0.0" y="51" width="30" height="128"/>
+                                                        <rect key="frame" x="0.0" y="42.5" width="30" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VHl-fe-YQ2">
                                                             <rect key="frame" x="0.0" y="0.0" width="30" height="128"/>
@@ -125,7 +126,7 @@
                                                         <size key="customSize" width="30" height="128"/>
                                                     </collectionViewCell>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Sfu-Bz-Zab">
-                                                        <rect key="frame" x="40" y="51" width="338" height="128"/>
+                                                        <rect key="frame" x="40" y="42.5" width="338" height="128"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dSG-st-Asb">
                                                             <rect key="frame" x="0.0" y="0.0" width="338" height="128"/>
@@ -140,7 +141,7 @@
                                                         <size key="customSize" width="338" height="128"/>
                                                     </collectionViewCell>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pU5-Or-Ipz">
-                                                        <rect key="frame" x="388" y="51" width="128" height="128"/>
+                                                        <rect key="frame" x="388" y="42.5" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bDh-gD-cdj">
                                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
