@@ -150,7 +150,10 @@
                                                 </cells>
                                             </collectionView>
                                             <segmentedControl opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="byG-Jc-geV" userLabel="Segmented Main">
-                                                <rect key="frame" x="-9" y="288" width="434" height="32"/>
+                                                <rect key="frame" x="-9" y="288" width="434" height="51"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="aGU-iC-vyf"/>
+                                                </constraints>
                                                 <segments>
                                                     <segment title="무비차트"/>
                                                     <segment title="아트하우스"/>
@@ -158,7 +161,7 @@
                                                 </segments>
                                             </segmentedControl>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJY-tb-q4f" userLabel="Seg View">
-                                                <rect key="frame" x="0.0" y="317" width="414" height="331"/>
+                                                <rect key="frame" x="0.0" y="337" width="414" height="311"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x35-WV-tvZ" userLabel="Sub Scroll">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -259,7 +262,7 @@
                                             <constraint firstItem="NCn-3q-LER" firstAttribute="top" secondItem="spE-HM-dYT" secondAttribute="bottom" constant="8" id="Ba4-Zj-2Yc"/>
                                             <constraint firstItem="Hru-L6-1GN" firstAttribute="leading" secondItem="OJY-tb-q4f" secondAttribute="leading" id="J6l-fE-IX5"/>
                                             <constraint firstAttribute="trailing" secondItem="byG-Jc-geV" secondAttribute="trailing" constant="-11" id="Qgp-xu-YHh"/>
-                                            <constraint firstItem="OJY-tb-q4f" firstAttribute="top" secondItem="Q9t-9j-frc" secondAttribute="top" constant="317" id="TNJ-wY-Lfq"/>
+                                            <constraint firstItem="OJY-tb-q4f" firstAttribute="top" secondItem="Q9t-9j-frc" secondAttribute="top" constant="337" id="TNJ-wY-Lfq"/>
                                             <constraint firstItem="byG-Jc-geV" firstAttribute="leading" secondItem="Q9t-9j-frc" secondAttribute="leading" constant="-9" id="Tza-vQ-D0U"/>
                                             <constraint firstAttribute="trailing" secondItem="spE-HM-dYT" secondAttribute="trailing" id="XnP-ro-yRQ"/>
                                             <constraint firstItem="spE-HM-dYT" firstAttribute="centerX" secondItem="Q9t-9j-frc" secondAttribute="centerX" id="Y9H-fu-hng"/>
@@ -269,7 +272,7 @@
                                             <constraint firstItem="Hru-L6-1GN" firstAttribute="centerX" secondItem="Q9t-9j-frc" secondAttribute="centerX" id="oO0-7r-zgJ"/>
                                             <constraint firstItem="Hru-L6-1GN" firstAttribute="top" secondItem="OJY-tb-q4f" secondAttribute="bottom" constant="8" id="pn6-F5-0gT"/>
                                             <constraint firstItem="Hru-L6-1GN" firstAttribute="trailing" secondItem="NCn-3q-LER" secondAttribute="trailing" id="qFq-9N-DgK"/>
-                                            <constraint firstItem="OJY-tb-q4f" firstAttribute="top" secondItem="NCn-3q-LER" secondAttribute="bottom" constant="46" id="qri-O0-zuv"/>
+                                            <constraint firstItem="OJY-tb-q4f" firstAttribute="top" secondItem="NCn-3q-LER" secondAttribute="bottom" constant="66" id="qri-O0-zuv"/>
                                             <constraint firstItem="spE-HM-dYT" firstAttribute="leading" secondItem="Q9t-9j-frc" secondAttribute="leading" id="r7Z-pP-WsD"/>
                                             <constraint firstItem="spE-HM-dYT" firstAttribute="top" secondItem="Q9t-9j-frc" secondAttribute="top" id="tfE-tE-93z"/>
                                         </constraints>
