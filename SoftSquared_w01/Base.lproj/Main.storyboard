@@ -227,7 +227,7 @@
                                                     <constraint firstItem="x35-WV-tvZ" firstAttribute="top" secondItem="OJY-tb-q4f" secondAttribute="top" id="TFI-UG-dfp"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hru-L6-1GN">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hru-L6-1GN" userLabel="Special Event">
                                                 <rect key="frame" x="0.0" y="656" width="414" height="128"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uA7-Pc-Q3I">
@@ -248,7 +248,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="uA7-Pc-Q3I" firstAttribute="leading" secondItem="Hru-L6-1GN" secondAttribute="leading" constant="8" id="hnP-7c-Okk"/>
                                                     <constraint firstAttribute="bottom" secondItem="uA7-Pc-Q3I" secondAttribute="bottom" constant="38" id="jBI-Qr-UIA"/>
@@ -278,10 +278,29 @@
                                             <constraint firstItem="spE-HM-dYT" firstAttribute="top" secondItem="Q9t-9j-frc" secondAttribute="top" id="tfE-tE-93z"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2i-Rc-twE" userLabel="AD view">
+                                        <rect key="frame" x="0.0" y="795" width="414" height="96"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cgv_ad" translatesAutoresizingMaskIntoConstraints="NO" id="KWu-ki-1cA">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.88236123320000004" green="0.88234215969999996" blue="0.88234597439999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="2oi-W4-23R"/>
+                                            <constraint firstAttribute="bottom" secondItem="KWu-ki-1cA" secondAttribute="bottom" id="7kM-lO-Et4"/>
+                                            <constraint firstItem="KWu-ki-1cA" firstAttribute="leading" secondItem="D2i-Rc-twE" secondAttribute="leading" id="GaP-1l-0wT"/>
+                                            <constraint firstItem="KWu-ki-1cA" firstAttribute="top" secondItem="D2i-Rc-twE" secondAttribute="top" id="Khd-qs-c9V"/>
+                                            <constraint firstAttribute="trailing" secondItem="KWu-ki-1cA" secondAttribute="trailing" id="zry-Hv-AmB"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="D2i-Rc-twE" firstAttribute="leading" secondItem="y1d-42-HWF" secondAttribute="leading" id="0jc-od-vC9"/>
                                     <constraint firstItem="Q9t-9j-frc" firstAttribute="leading" secondItem="y1d-42-HWF" secondAttribute="leading" id="IJb-dS-mDl"/>
+                                    <constraint firstAttribute="trailing" secondItem="D2i-Rc-twE" secondAttribute="trailing" id="KqO-WA-31V"/>
                                     <constraint firstItem="Q9t-9j-frc" firstAttribute="width" secondItem="y1d-42-HWF" secondAttribute="width" id="OiS-e1-2fU"/>
+                                    <constraint firstItem="D2i-Rc-twE" firstAttribute="top" secondItem="Hru-L6-1GN" secondAttribute="bottom" constant="11" id="ZDX-2F-gnB"/>
                                     <constraint firstItem="Q9t-9j-frc" firstAttribute="bottom" secondItem="y1d-42-HWF" secondAttribute="bottom" id="jIJ-ct-UKf"/>
                                     <constraint firstItem="Q9t-9j-frc" firstAttribute="trailing" secondItem="y1d-42-HWF" secondAttribute="trailing" id="kYR-zz-quH"/>
                                     <constraint firstItem="Q9t-9j-frc" firstAttribute="centerY" secondItem="y1d-42-HWF" secondAttribute="centerY" id="m9J-AN-A8b"/>
@@ -316,6 +335,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cgv_ad" width="749" height="137"/>
         <image name="cgv_logo" width="50" height="24"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="navi_pop" width="30.5" height="25"/>
