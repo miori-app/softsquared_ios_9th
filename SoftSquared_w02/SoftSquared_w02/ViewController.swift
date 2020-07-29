@@ -10,25 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var unameTextFiled: UITextField!
+    @IBAction func didTapAction(_ sender: Any) {
+        let uname : String = unameTextFiled.text!
+        print(uname)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print("first view  did load")
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("viewWillAppear")
+        print("1 : viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("viewDidAppear")
+        print("1 : viewDidAppear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        print("viewWillDisappear")
+        print("1 : viewWillDisappear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        print("viewDidDisappear")
+        print("1 : viewDidDisappear")
     }
 
 }
