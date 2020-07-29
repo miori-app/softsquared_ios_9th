@@ -322,8 +322,18 @@
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" title="Item" image="cgv_logo" id="ho3-Vb-onI"/>
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" image="line.horizontal.3" catalog="system" id="JUV-C2-xqp"/>
-                            <barButtonItem title="Item" image="navi_pop" id="GWL-aD-Vwe"/>
+                            <barButtonItem title="Item" image="line.horizontal.3" catalog="system" id="JUV-C2-xqp">
+                                <connections>
+                                    <segue destination="ejU-Bt-wOO" kind="popoverPresentation" popoverAnchorBarButtonItem="JUV-C2-xqp" id="CqK-5J-HiZ">
+                                        <popoverArrowDirection key="popoverArrowDirection" left="YES"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="navi_pop" id="GWL-aD-Vwe">
+                                <connections>
+                                    <segue destination="eGu-hz-vab" kind="show" id="4DP-XJ-dGP"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="Item" image="navi_ticket" id="Nj4-m8-aFw"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -333,10 +343,43 @@
             </objects>
             <point key="canvasLocation" x="-291.304347826087" y="46.875"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xjK-IW-Z0R">
+            <objects>
+                <viewController id="ejU-Bt-wOO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vfw-6z-zaJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Wxe-Q2-Wyi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QgZ-AO-z7w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6G-cn-jI7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="356"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5yR-Ec-RhJ">
+            <objects>
+                <viewController id="eGu-hz-vab" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5ur-wz-Udo">
+                        <leftBarButtonItems>
+                            <barButtonItem title="order" image="chevron.left" catalog="system" id="z4i-fZ-1Sl"/>
+                            <barButtonItem title="지금주문" id="phe-Kt-PrR"/>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="7cv-Rf-PSx"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdO-fT-xS4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499" y="-288"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="cgv_ad" width="749" height="137"/>
+        <image name="cgv_ad" width="374.5" height="68.5"/>
         <image name="cgv_logo" width="50" height="24"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="navi_pop" width="30.5" height="25"/>
         <image name="navi_ticket" width="25.333333969116211" height="24"/>
