@@ -15,6 +15,7 @@
 		3DB5F49624D1359600DA698E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB5F49424D1359600DA698E /* LaunchScreen.storyboard */; };
 		3DB5F4A124D1359600DA698E /* SoftSquared_w02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5F4A024D1359600DA698E /* SoftSquared_w02Tests.swift */; };
 		3DB5F4AC24D1359600DA698E /* SoftSquared_w02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5F4AB24D1359600DA698E /* SoftSquared_w02UITests.swift */; };
+		3DB5F4BA24D1394B00DA698E /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5F4B924D1394B00DA698E /* SecondController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3DB5F4A724D1359600DA698E /* SoftSquared_w02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftSquared_w02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB5F4AB24D1359600DA698E /* SoftSquared_w02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSquared_w02UITests.swift; sourceTree = "<group>"; };
 		3DB5F4AD24D1359600DA698E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB5F4B924D1394B00DA698E /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3DB5F49224D1359600DA698E /* Assets.xcassets */,
 				3DB5F49424D1359600DA698E /* LaunchScreen.storyboard */,
 				3DB5F49724D1359600DA698E /* Info.plist */,
+				3DB5F4B924D1394B00DA698E /* SecondController.swift */,
 			);
 			path = SoftSquared_w02;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DB5F48E24D1359500DA698E /* ViewController.swift in Sources */,
+				3DB5F4BA24D1394B00DA698E /* SecondController.swift in Sources */,
 				3DB5F48A24D1359500DA698E /* AppDelegate.swift in Sources */,
 				3DB5F48C24D1359500DA698E /* SceneDelegate.swift in Sources */,
 			);
