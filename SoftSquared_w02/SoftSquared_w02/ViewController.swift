@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var unameTextFiled: UITextField!
     @IBAction func didTapAction(_ sender: Any) {
         let uname : String = unameTextFiled.text!
+        let secondViewController = self.storyboard?.instantiateViewController(identifier: "SecondViewCtrl") as! SecondViewController
+        
+        secondViewController.result = uname
+        
+        self.present(secondViewController, animated: true, completion: nil)
+        
         print(uname)
     }
     override func viewDidLoad() {
