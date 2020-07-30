@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D02B04124D335F60099F85C /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D02B04024D335F60099F85C /* LoginFormViewController.swift */; };
 		3D8FB30124D1D06A00D6BD43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FB30024D1D06A00D6BD43 /* AppDelegate.swift */; };
 		3D8FB30324D1D06A00D6BD43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FB30224D1D06A00D6BD43 /* SceneDelegate.swift */; };
 		3D8FB30524D1D06A00D6BD43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FB30424D1D06A00D6BD43 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D02B04024D335F60099F85C /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
 		3D8FB2FD24D1D06A00D6BD43 /* SoftSquared_w02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftSquared_w02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8FB30024D1D06A00D6BD43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8FB30224D1D06A00D6BD43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				3D8FB30B24D1D06A00D6BD43 /* LaunchScreen.storyboard */,
 				3D8FB30E24D1D06A00D6BD43 /* Info.plist */,
 				3D8FB33024D1D96400D6BD43 /* SecondViewController.swift */,
+				3D02B04024D335F60099F85C /* LoginFormViewController.swift */,
 			);
 			path = SoftSquared_w02;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D8FB33124D1D96400D6BD43 /* SecondViewController.swift in Sources */,
+				3D02B04124D335F60099F85C /* LoginFormViewController.swift in Sources */,
 				3D8FB30524D1D06A00D6BD43 /* ViewController.swift in Sources */,
 				3D8FB30124D1D06A00D6BD43 /* AppDelegate.swift in Sources */,
 				3D8FB30324D1D06A00D6BD43 /* SceneDelegate.swift in Sources */,
