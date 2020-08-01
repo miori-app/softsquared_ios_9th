@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    
     @IBOutlet weak var unameTextFiled: UITextField!
     @IBOutlet weak var saveLogTF: UITextField!
     
@@ -92,6 +91,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
+        userInfo?.text = "로그인을 해주세요"
         print("1 : viewDidDisappear")
     }
     

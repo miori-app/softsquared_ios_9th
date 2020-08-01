@@ -16,6 +16,7 @@ class LoginFormViewController: UIViewController {
     @IBAction func didTapSignIn(_ sender: Any) {
         let uid : String = uidInput.text!
         print("your ID : \(uid)")
+    
         let firstViewController = self.storyboard?.instantiateViewController(identifier: "FirstViewCtrl") as! ViewController
         
         firstViewController.userID = uid
@@ -24,13 +25,15 @@ class LoginFormViewController: UIViewController {
         guard let vc = preVC as? ViewController else {
             return
         }
+        if popUpAlert(dbID: "miori") == 1{
         vc.userInfo?.text = "\(uid)님 환영합니다~"
         //firstViewController.userInfo?.text = "환영합니다"
         self.presentingViewController?.dismiss(animated: true)
-         //dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
         //firstViewController.userInfo.text! = "\(uid)님 환영합니다"
         //self.present(firstViewController, animated: true, completion: nil)
-        
+        } else {
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,21 +54,39 @@ class LoginFormViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        let firstViewController = self.storyboard?.instantiateViewController(identifier: "FirstViewCtrl") as! ViewController
-           
-           firstViewController.userInfo?.text = "환영합니다"
         print("LogIn : viewDidDisappear")
     }
     
- 
+    func popUpAlert(dbID : String) -> Int {
+        //print("alert")
+        if dbID == uidInput.text {
+            print("id 있음") //성공
+            return 1
+            //userInfo?.text = "환영합니다"
+            //var alert = UIAlertController(title: "LoginSuccess", message: "로그인성공", preferredStyle: .alert)
+            //let okBtn = UIAlertAction(title: "OK",  style: .default, handler: nil)
+            //alert.addAction(okBtn)
+            //present(alert, animated: true, completion: nil)
+        } else {
+            print("id 없음")
+            var alert = UIAlertController(title: "❗️회원가입 먼저", message: "등록된 ID가 없어요", preferredStyle: .alert)
+            let okBtn = UIAlertAction(title: "OK",  style: .default, handler: nil)
+            alert.addAction(okBtn)
+            present(alert, animated: true, completion: nil)
+            //userInfo?.text! = "로그인을 해주세요"
+            return 0
+        }
+        
+    }
     
-//    if let c_userID = userID {
-//             print("벗겨지니? \(c_userID)") //성공
-//             userInfo?.text = "환영합니다"
-//         } else {
-//             print("nil이니까 그대로")
-//             userInfo?.text! = "로그인을 해주세요"
-//         }
+    
+    //    if let c_userID = userID {
+    //             print("벗겨지니? \(c_userID)") //성공
+    //             userInfo?.text = "환영합니다"
+    //         } else {
+    //             print("nil이니까 그대로")
+    //             userInfo?.text! = "로그인을 해주세요"
+    //         }
     
     
 }
