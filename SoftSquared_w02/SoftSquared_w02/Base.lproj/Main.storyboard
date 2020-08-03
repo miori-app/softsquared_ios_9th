@@ -79,6 +79,7 @@
                     <connections>
                         <outlet property="unameTextFiled" destination="5x4-qS-FAu" id="q7S-Uc-pCd"/>
                         <outlet property="userInfo" destination="opd-tg-5zP" id="KtG-jW-3ad"/>
+                        <outlet property="valuePass" destination="RIG-Ju-xLf" id="SA7-vA-0Nc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -144,7 +145,7 @@
                                                     <constraint firstAttribute="width" secondItem="DGc-HT-3Ku" secondAttribute="height" multiplier="129:17" id="rl8-hj-whX"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                         <constraints>

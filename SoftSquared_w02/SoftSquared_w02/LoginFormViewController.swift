@@ -10,16 +10,48 @@ import UIKit
 
 class LoginFormViewController: UIViewController {
     
+    var uid : String = ""
+    
     @IBOutlet weak var uidInput: UITextField!
     @IBOutlet weak var upwInput: UITextField!
     
     @IBAction func didTapSignIn(_ sender: Any) {
-        let uid : String = uidInput.text!
+        uid = uidInput.text!
         print("your ID : \(uid)")
     
-        let firstViewController = self.storyboard?.instantiateViewController(identifier: "FirstViewCtrl") as! ViewController
+//        let firstViewController = self.storyboard?.instantiateViewController(identifier: "FirstViewCtrl") as! ViewController
+//
+//        firstViewController.userID = uid
         
-        firstViewController.userID = uid
+        if popUpAlert(dbID: "miori") == 1{
+            dismiss(animated: true, completion: nil)
+        } else {
+            upwInput?.text = ""
+            uidInput?.text = ""
+        }
+        
+        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        designTextField(uidInput)
+        designTextField(upwInput)
+        
+        print("login view  did load")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("LogIn : viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        uidInput.becomeFirstResponder() //focus
+        print("LogIn : viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
         
         let preVC = self.presentingViewController
         guard let vc = preVC as? ViewController else {
@@ -34,22 +66,7 @@ class LoginFormViewController: UIViewController {
         //self.present(firstViewController, animated: true, completion: nil)
         } else {
         }
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("login view  did load")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        print("LogIn : viewWillAppear")
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        print("LogIn : viewDidAppear")
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
+        
         print("LogIn : viewWillDisappear")
     }
     
@@ -78,6 +95,12 @@ class LoginFormViewController: UIViewController {
         }
         
     }
+    
+    func designTextField(_ textField: UITextField) {
+           textField.layer.cornerRadius = 5
+        textField.layer.borderColor = UIColor.systemBlue.cgColor
+           textField.layer.borderWidth = 1/UIScreen.main.scale
+       }
     
     
     //    if let c_userID = userID {

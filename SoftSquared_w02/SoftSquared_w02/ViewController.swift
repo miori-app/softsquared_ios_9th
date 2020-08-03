@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var userInfo: UILabel!
     var userID : String? 
     
+    @IBOutlet weak var valuePass: UIButton!
     
     @IBAction func didTapAction(_ sender: Any) {
         let uname : String = unameTextFiled.text! //lazy가 뭐지? 왜 되지?r
@@ -58,6 +59,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        unameTextFiled?.placeholder = "값넘기기"
+        unameTextFiled.becomeFirstResponder() //focus
         print("first view  did load")
     }
     
