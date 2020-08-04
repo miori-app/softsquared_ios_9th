@@ -79,14 +79,14 @@ class LoginFormViewController: UIViewController {
         if dbID == uidInput.text {
             print("id 있음") //성공
             return 1
-            //userInfo?.text = "환영합니다"
+            //userInfo?.text = "환영합니다" 
             //var alert = UIAlertController(title: "LoginSuccess", message: "로그인성공", preferredStyle: .alert)
             //let okBtn = UIAlertAction(title: "OK",  style: .default, handler: nil)
             //alert.addAction(okBtn)
             //present(alert, animated: true, completion: nil)
         } else {
             print("id 없음")
-            var alert = UIAlertController(title: "❗️회원가입 먼저", message: "등록된 ID가 없어요", preferredStyle: .alert)
+            var alert = UIAlertController(title: "❗️회원가입 먼저", message: "등록된 ID가 없어요!!", preferredStyle: .alert)
             let okBtn = UIAlertAction(title: "OK",  style: .default, handler: nil)
             alert.addAction(okBtn)
             present(alert, animated: true, completion: nil)
