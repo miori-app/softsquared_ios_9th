@@ -27,10 +27,10 @@ protocol Talkable {
     var topic : String { get set }
     var language : String { get }
     
-    //method
+    //method 요구 (구현이 아님)
     func talk()
     
-    //initalizer
+    //initalizer 요구
     init(topic: String, language: String)
 }
 extension Flyable {
@@ -60,22 +60,25 @@ struct Person2 : Talkable {
     var language: String
     
     func talk() {
-        <#code#>
+        print("\(topic)에 대해 \(language)로 말합니다")
     }
     
     init(topic: String, language: String) {
-        <#code#>
+        self.topic = topic
+        self.language = language
     }
 }
 
 class ViewController: UIViewController {
     
+    //사용자 정의 이니셜라이저를 호출해야만함
     var person : Person?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //사용자 정의 이니셜라이저를 호출해야만함
         person = Person("miori")
         
         // !붙여서 Optional제거
@@ -83,6 +86,7 @@ class ViewController: UIViewController {
         person?.fly()
         person?.run()
         print("hello")
+        
     }
 
 
