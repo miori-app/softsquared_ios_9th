@@ -15,6 +15,9 @@
 		3D7F113024DB05FA006C3853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7F112E24DB05FA006C3853 /* LaunchScreen.storyboard */; };
 		3D7F113B24DB05FA006C3853 /* SoftSquared_w03_practiceTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F113A24DB05FA006C3853 /* SoftSquared_w03_practiceTableViewTests.swift */; };
 		3D7F114624DB05FA006C3853 /* SoftSquared_w03_practiceTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7F114524DB05FA006C3853 /* SoftSquared_w03_practiceTableViewUITests.swift */; };
+		3DB136B924DB1AE8006FF753 /* FriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB136B824DB1AE8006FF753 /* FriendData.swift */; };
+		3DB136C024DB1D73006FF753 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB136BE24DB1D73006FF753 /* FriendTableViewCell.swift */; };
+		3DB136C124DB1D73006FF753 /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB136BF24DB1D73006FF753 /* FriendTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		3D7F114124DB05FA006C3853 /* SoftSquared_w03_practiceTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftSquared_w03_practiceTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D7F114524DB05FA006C3853 /* SoftSquared_w03_practiceTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSquared_w03_practiceTableViewUITests.swift; sourceTree = "<group>"; };
 		3D7F114724DB05FA006C3853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB136B824DB1AE8006FF753 /* FriendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendData.swift; sourceTree = "<group>"; };
+		3DB136BE24DB1D73006FF753 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		3DB136BF24DB1D73006FF753 /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				3D7F112C24DB05FA006C3853 /* Assets.xcassets */,
 				3D7F112E24DB05FA006C3853 /* LaunchScreen.storyboard */,
 				3D7F113124DB05FA006C3853 /* Info.plist */,
+				3DB136B824DB1AE8006FF753 /* FriendData.swift */,
+				3DB136BE24DB1D73006FF753 /* FriendTableViewCell.swift */,
+				3DB136BF24DB1D73006FF753 /* FriendTableViewCell.xib */,
 			);
 			path = SoftSquared_w03_practiceTableView;
 			sourceTree = "<group>";
@@ -235,6 +244,7 @@
 				3D7F113024DB05FA006C3853 /* LaunchScreen.storyboard in Resources */,
 				3D7F112D24DB05FA006C3853 /* Assets.xcassets in Resources */,
 				3D7F112B24DB05F9006C3853 /* Main.storyboard in Resources */,
+				3DB136C124DB1D73006FF753 /* FriendTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7F112824DB05F9006C3853 /* ViewController.swift in Sources */,
+				3DB136B924DB1AE8006FF753 /* FriendData.swift in Sources */,
+				3DB136C024DB1D73006FF753 /* FriendTableViewCell.swift in Sources */,
 				3D7F112424DB05F9006C3853 /* AppDelegate.swift in Sources */,
 				3D7F112624DB05F9006C3853 /* SceneDelegate.swift in Sources */,
 			);
