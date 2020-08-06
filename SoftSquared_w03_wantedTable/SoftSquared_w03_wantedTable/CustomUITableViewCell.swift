@@ -6,4 +6,14 @@
 //  Copyright © 2020 miori. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CustomUITalbeViewCell : UITableViewCell {
+    
+    @IBOutlet weak var companyLogo: UIImageView!
+    @IBOutlet weak var companyName: UILabel!
+    @IBOutlet weak var companyLoc: UILabel!
+    
+
+}
+

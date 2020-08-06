@@ -17,6 +17,7 @@
 		3D2E963024DC614A000F0ED0 /* SoftSquared_w03_wantedTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E962F24DC614A000F0ED0 /* SoftSquared_w03_wantedTableUITests.swift */; };
 		3D2E963E24DC6388000F0ED0 /* TealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E963D24DC6388000F0ED0 /* TealViewController.swift */; };
 		3D2E964224DC63AD000F0ED0 /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E964124DC63AD000F0ED0 /* OrangeViewController.swift */; };
+		3D2E964624DC6CD2000F0ED0 /* CustomUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3D2E963124DC614A000F0ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D2E963D24DC6388000F0ED0 /* TealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TealViewController.swift; sourceTree = "<group>"; };
 		3D2E964124DC63AD000F0ED0 /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
+		3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				3D2E961B24DC614A000F0ED0 /* Info.plist */,
 				3D2E963D24DC6388000F0ED0 /* TealViewController.swift */,
 				3D2E964124DC63AD000F0ED0 /* OrangeViewController.swift */,
+				3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */,
 			);
 			path = SoftSquared_w03_wantedTable;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				3D2E963E24DC6388000F0ED0 /* TealViewController.swift in Sources */,
 				3D2E964224DC63AD000F0ED0 /* OrangeViewController.swift in Sources */,
+				3D2E964624DC6CD2000F0ED0 /* CustomUITableViewCell.swift in Sources */,
 				3D2E961224DC6149000F0ED0 /* ViewController.swift in Sources */,
 				3D2E960E24DC6149000F0ED0 /* AppDelegate.swift in Sources */,
 				3D2E961024DC6149000F0ED0 /* SceneDelegate.swift in Sources */,
