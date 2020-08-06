@@ -13,6 +13,6 @@ class CustomUITalbeViewCell : UITableViewCell {
     @IBOutlet weak var companyLogo: UIImageView!
     @IBOutlet weak var companyName: UILabel!
     @IBOutlet weak var companyLoc: UILabel!
-    
+    @IBOutlet weak var followingBtn: UIButton!
 }
 

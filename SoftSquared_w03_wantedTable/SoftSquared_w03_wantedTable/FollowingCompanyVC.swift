@@ -9,8 +9,29 @@
 import UIKit
 
 class FollowingCompanyVC: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    
+    // 해당 cell의 indexPath.row에 맞는 action sheet 생성
+    @objc func didTap(_ sender: UIButton){
+      // use the tag of button as index
+        let tapCName = cNames[sender.tag]
+        //첫번쨰 :  문구
+        let optionMenu = UIAlertController(title: nil, message: "기업 '\(tapCName)' 팔로우 취소하시겠어요?", preferredStyle: .actionSheet)
+        //두번째 : 액션 선택지
+        let deleteAction = UIAlertAction(title: "팔로우 취소", style: .default)
+        //세번째 : 밑에 취소 버튼
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel)
+        
+        //네번째 : 이제 연결
+        optionMenu.addAction(deleteAction)
+        optionMenu.addAction(cancelAction)
+        
+        //마지막 : 보여줘!!
+        self.present(optionMenu, animated: true, completion: nil)
+
+    }
     
     let cNames = ["화해(버드뷰)","원티드랩","왓챠"]
     let cLogos = ["birdview","wanted","watcha"]
@@ -24,24 +45,25 @@ class FollowingCompanyVC: UIViewController {
         tableView.delegate = self
         
         
-//        let myCustomCell = UINib(nibName: "CustomUITalbeViewCell", bundle: nil)
-//        self.tableView.register(myCustomCell, forCellReuseIdentifier: "CustomCell")
-
+        //        let myCustomCell = UINib(nibName: "CustomUITalbeViewCell", bundle: nil)
+        //        self.tableView.register(myCustomCell, forCellReuseIdentifier: "CustomCell")
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
+
 
 extension FollowingCompanyVC : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,8 +78,20 @@ extension FollowingCompanyVC : UITableViewDataSource {
         cell.companyName.text = cNames[indexPath.row]
         cell.companyLoc.text = cLocs[indexPath.row]
         
+        //버튼 태그에 인덱스를 부여
+        /*
+         왜? -> 팔로잉 버튼 클릭시 액션시트 올릴때 각 기업의 인덱스가 필요하기 때문에
+         */
+        cell.followingBtn.tag = indexPath.row
+        
+        //didTap 함수 호출
+        cell.followingBtn.addTarget(self, action: #selector(didTap(_:)), for: .touchUpInside)
+
+        
         return cell
     }
+    
+    
     
     
 }

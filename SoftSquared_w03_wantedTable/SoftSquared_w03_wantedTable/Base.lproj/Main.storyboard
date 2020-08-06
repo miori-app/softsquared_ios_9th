@@ -100,6 +100,7 @@
                                             <outlet property="companyLoc" destination="vYi-Pa-Ijn" id="mkc-X9-gC1"/>
                                             <outlet property="companyLogo" destination="qKg-RE-O6A" id="lMh-CL-gNR"/>
                                             <outlet property="companyName" destination="W9D-JC-2Wq" id="VGq-Rr-in6"/>
+                                            <outlet property="followingBtn" destination="Cyo-DC-7PR" id="zUJ-BK-G2G"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
