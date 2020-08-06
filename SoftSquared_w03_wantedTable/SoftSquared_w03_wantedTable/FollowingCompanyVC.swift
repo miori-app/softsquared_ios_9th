@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrangeViewController: UIViewController {
+class FollowingCompanyVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,6 +21,7 @@ class OrangeViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        
         
 //        let myCustomCell = UINib(nibName: "CustomUITalbeViewCell", bundle: nil)
 //        self.tableView.register(myCustomCell, forCellReuseIdentifier: "CustomCell")
@@ -41,7 +42,7 @@ class OrangeViewController: UIViewController {
 
 }
 
-extension OrangeViewController : UITableViewDataSource {
+extension FollowingCompanyVC : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cNames.count
     }
@@ -50,7 +51,7 @@ extension OrangeViewController : UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomUITalbeViewCell", for: indexPath) as! CustomUITalbeViewCell
         
         cell.companyLogo.image = UIImage(named: cLogos[indexPath.row])
-        print("ok")
+        //print("ok")
         cell.companyName.text = cNames[indexPath.row]
         
         return cell
@@ -59,6 +60,6 @@ extension OrangeViewController : UITableViewDataSource {
     
 }
 
-extension OrangeViewController : UITableViewDelegate {
+extension FollowingCompanyVC : UITableViewDelegate {
     
 }
