@@ -11,12 +11,14 @@ import Foundation
 class FriendData {
     var name : String?
     var profileMessage : String?
+    var switchState : Bool?
     
     //init 안에 _(언더바) 넣어주면 external name / external parameter 받지 않게 해줌
     //말인 즉슨 name:"miori" 이런식으로 받아올 필요 없음
-    init(_ name : String, _ profileMessage : String) {
+    init(_ name : String, _ profileMessage : String, _ switchState : Bool) {
         self.name = name
         self.profileMessage = profileMessage
+        self.switchState = switchState
     }
 }
 

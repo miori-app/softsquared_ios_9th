@@ -30,6 +30,9 @@
                     </label>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5UO-V1-OtH">
                         <rect key="frame" x="247" y="7" width="49" height="31"/>
+                        <connections>
+                            <action selector="SwichAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="l5P-Ob-E58"/>
+                        </connections>
                     </switch>
                 </subviews>
                 <constraints>
@@ -43,6 +46,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="uiCheck" destination="5UO-V1-OtH" id="WMg-v8-fnX"/>
                 <outlet property="uiName" destination="9RE-At-aex" id="ifF-T8-87G"/>
                 <outlet property="uiProfileMessage" destination="nSN-c1-Dhp" id="1vZ-m5-cX4"/>
             </connections>
