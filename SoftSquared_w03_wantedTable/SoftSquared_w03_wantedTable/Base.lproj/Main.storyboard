@@ -27,7 +27,7 @@
         <!--내 정보-->
         <scene sceneID="GBD-PG-cKc">
             <objects>
-                <viewController id="qxz-Qk-KgP" customClass="OrangeViewController" customModule="SoftSquared_w03_wantedTable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qxz-Qk-KgP" customClass="FollowingCompanyVC" customModule="SoftSquared_w03_wantedTable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cjp-Q7-7hu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,14 +56,30 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyo-DC-7PR">
+                                                    <rect key="frame" x="288" y="27.5" width="106" height="33"/>
+                                                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Cyo-DC-7PR" secondAttribute="height" multiplier="106:33" id="4ss-0q-SWh"/>
+                                                        <constraint firstAttribute="width" constant="106" id="SzG-19-rdI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <state key="normal" title="팔로잉">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="qKg-RE-O6A" firstAttribute="leading" secondItem="Swp-C2-9V8" secondAttribute="leadingMargin" id="8xa-Gv-siX"/>
                                                 <constraint firstItem="W9D-JC-2Wq" firstAttribute="leading" secondItem="qKg-RE-O6A" secondAttribute="trailing" constant="8" id="BMP-hK-B6M"/>
+                                                <constraint firstItem="Cyo-DC-7PR" firstAttribute="centerY" secondItem="Swp-C2-9V8" secondAttribute="centerY" id="GxK-19-sWk"/>
                                                 <constraint firstItem="W9D-JC-2Wq" firstAttribute="top" secondItem="Swp-C2-9V8" secondAttribute="topMargin" constant="13" id="glh-TT-BAf"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="qKg-RE-O6A" secondAttribute="bottom" constant="13" id="iew-fK-bpz"/>
                                                 <constraint firstItem="qKg-RE-O6A" firstAttribute="top" secondItem="Swp-C2-9V8" secondAttribute="topMargin" constant="13" id="lYQ-uT-duV"/>
+                                                <constraint firstItem="Cyo-DC-7PR" firstAttribute="trailing" secondItem="Swp-C2-9V8" secondAttribute="trailingMargin" id="mQz-8Z-ZS9"/>
                                                 <constraint firstItem="W9D-JC-2Wq" firstAttribute="top" secondItem="qKg-RE-O6A" secondAttribute="top" id="tEU-PC-o9l"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Cyo-DC-7PR" secondAttribute="bottom" constant="16.5" id="wu3-ec-Lre"/>
+                                                <constraint firstItem="Cyo-DC-7PR" firstAttribute="top" secondItem="Swp-C2-9V8" secondAttribute="topMargin" constant="16.5" id="xIZ-RF-HB6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
