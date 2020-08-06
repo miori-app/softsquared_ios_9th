@@ -14,6 +14,7 @@ class FollowingCompanyVC: UIViewController {
     
     let cNames = ["화해(버드뷰)","원티드랩","왓챠"]
     let cLogos = ["birdview","wanted","watcha"]
+    let cLocs = ["서울특별시 마포구 와우산로 121","서울 송파구","서울 강남구"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,7 @@ extension FollowingCompanyVC : UITableViewDataSource {
         cell.companyLogo.image = UIImage(named: cLogos[indexPath.row])
         //print("ok")
         cell.companyName.text = cNames[indexPath.row]
+        cell.companyLoc.text = cLocs[indexPath.row]
         
         return cell
     }

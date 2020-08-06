@@ -14,6 +14,5 @@ class CustomUITalbeViewCell : UITableViewCell {
     @IBOutlet weak var companyName: UILabel!
     @IBOutlet weak var companyLoc: UILabel!
     
-
 }
 

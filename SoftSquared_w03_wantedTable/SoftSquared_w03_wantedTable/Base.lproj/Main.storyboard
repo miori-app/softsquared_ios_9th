@@ -68,21 +68,36 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYi-Pa-Ijn">
+                                                    <rect key="frame" x="68" y="47" width="202" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="vYi-Pa-Ijn" secondAttribute="height" multiplier="202:17" id="8Sd-jm-Nol"/>
+                                                        <constraint firstAttribute="width" constant="202" id="p8V-wN-V4F"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="qKg-RE-O6A" firstAttribute="leading" secondItem="Swp-C2-9V8" secondAttribute="leadingMargin" id="8xa-Gv-siX"/>
                                                 <constraint firstItem="W9D-JC-2Wq" firstAttribute="leading" secondItem="qKg-RE-O6A" secondAttribute="trailing" constant="8" id="BMP-hK-B6M"/>
+                                                <constraint firstItem="vYi-Pa-Ijn" firstAttribute="bottom" secondItem="qKg-RE-O6A" secondAttribute="bottom" id="Fbj-vN-J4t"/>
                                                 <constraint firstItem="Cyo-DC-7PR" firstAttribute="centerY" secondItem="Swp-C2-9V8" secondAttribute="centerY" id="GxK-19-sWk"/>
+                                                <constraint firstAttribute="bottom" secondItem="vYi-Pa-Ijn" secondAttribute="bottom" constant="24" id="Ise-2A-TaV"/>
+                                                <constraint firstItem="vYi-Pa-Ijn" firstAttribute="top" secondItem="W9D-JC-2Wq" secondAttribute="bottom" constant="6" id="LiS-wa-1qO"/>
                                                 <constraint firstItem="W9D-JC-2Wq" firstAttribute="top" secondItem="Swp-C2-9V8" secondAttribute="topMargin" constant="13" id="glh-TT-BAf"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="qKg-RE-O6A" secondAttribute="bottom" constant="13" id="iew-fK-bpz"/>
                                                 <constraint firstItem="qKg-RE-O6A" firstAttribute="top" secondItem="Swp-C2-9V8" secondAttribute="topMargin" constant="13" id="lYQ-uT-duV"/>
                                                 <constraint firstItem="Cyo-DC-7PR" firstAttribute="trailing" secondItem="Swp-C2-9V8" secondAttribute="trailingMargin" id="mQz-8Z-ZS9"/>
                                                 <constraint firstItem="W9D-JC-2Wq" firstAttribute="top" secondItem="qKg-RE-O6A" secondAttribute="top" id="tEU-PC-o9l"/>
+                                                <constraint firstItem="vYi-Pa-Ijn" firstAttribute="leading" secondItem="qKg-RE-O6A" secondAttribute="trailing" constant="8" id="vem-3V-eNo"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Cyo-DC-7PR" secondAttribute="bottom" constant="16.5" id="wu3-ec-Lre"/>
                                                 <constraint firstItem="Cyo-DC-7PR" firstAttribute="top" secondItem="Swp-C2-9V8" secondAttribute="topMargin" constant="16.5" id="xIZ-RF-HB6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="companyLoc" destination="vYi-Pa-Ijn" id="mkc-X9-gC1"/>
                                             <outlet property="companyLogo" destination="qKg-RE-O6A" id="lMh-CL-gNR"/>
                                             <outlet property="companyName" destination="W9D-JC-2Wq" id="VGq-Rr-in6"/>
                                         </connections>
