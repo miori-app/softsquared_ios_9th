@@ -28,11 +28,11 @@ class FollowingCompanyVC: UIViewController {
         //두번째 : 액션 선택지
         let deleteAction = UIAlertAction(title: "팔로우 취소", style: .destructive, handler: { (alert: UIAlertAction!) -> Void in
             print("Yes")
-//            self.cNames.remove(at: idx)
-//            self.cLocs.remove(at: idx)
-//            self.cLogos.remove(at: idx)
-//            print(self.cNames)
-//            print("ok")
+            self.cNames.remove(at: idx)
+            self.cLocs.remove(at: idx)
+            self.cLogos.remove(at: idx)
+            print(self.cNames)
+            print("ok")
         })
         //let deleteAction = UIAlertAction(title: "팔로우 취소", style: .destructive, handler: )
         //세번째 : 밑에 취소 버튼
@@ -68,6 +68,7 @@ class FollowingCompanyVC: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        initRefresh()
         
         
         //        let myCustomCell = UINib(nibName: "CustomUITalbeViewCell", bundle: nil)
@@ -86,6 +87,27 @@ class FollowingCompanyVC: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
+    
+    /*
+     아래로 스크롤 했을 때 새로고침하기
+     */
+    func initRefresh() {
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(updateUI(refresh:)), for: .valueChanged)
+        //띄어주는 문구
+        refresh.attributedTitle = NSAttributedString(string: "잠시만여!!")
+        
+        if  #available(iOS 10.0, *) {
+            tableView.refreshControl = refresh
+        } else {
+            tableView.addSubview(refresh)
+        }
+    }
+    
+    @objc func updateUI(refresh: UIRefreshControl) {
+        refresh.endRefreshing() // refresh 종료
+        tableView.reloadData() // tableview 로드
+    }
     
 }
 
