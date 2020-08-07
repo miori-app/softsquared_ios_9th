@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TealViewController: UIViewController {
+class PickViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

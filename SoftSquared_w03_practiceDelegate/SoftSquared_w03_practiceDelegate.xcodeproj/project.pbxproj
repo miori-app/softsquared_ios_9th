@@ -15,6 +15,7 @@
 		3D472AC124DA89E200C429A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D472ABF24DA89E200C429A7 /* LaunchScreen.storyboard */; };
 		3D472ACC24DA89E200C429A7 /* SoftSquared_w03_practiceDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D472ACB24DA89E200C429A7 /* SoftSquared_w03_practiceDelegateTests.swift */; };
 		3D472AD724DA89E200C429A7 /* SoftSquared_w03_practiceDelegateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D472AD624DA89E200C429A7 /* SoftSquared_w03_practiceDelegateUITests.swift */; };
+		3D7547BD24DD32600046687F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7547BC24DD32600046687F /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D472AD224DA89E200C429A7 /* SoftSquared_w03_practiceDelegateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftSquared_w03_practiceDelegateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D472AD624DA89E200C429A7 /* SoftSquared_w03_practiceDelegateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSquared_w03_practiceDelegateUITests.swift; sourceTree = "<group>"; };
 		3D472AD824DA89E200C429A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D7547BC24DD32600046687F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3D472ABD24DA89E200C429A7 /* Assets.xcassets */,
 				3D472ABF24DA89E200C429A7 /* LaunchScreen.storyboard */,
 				3D472AC224DA89E200C429A7 /* Info.plist */,
+				3D7547BC24DD32600046687F /* SecondViewController.swift */,
 			);
 			path = SoftSquared_w03_practiceDelegate;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7547BD24DD32600046687F /* SecondViewController.swift in Sources */,
 				3D472AB924DA89E100C429A7 /* ViewController.swift in Sources */,
 				3D472AB524DA89E100C429A7 /* AppDelegate.swift in Sources */,
 				3D472AB724DA89E100C429A7 /* SceneDelegate.swift in Sources */,
