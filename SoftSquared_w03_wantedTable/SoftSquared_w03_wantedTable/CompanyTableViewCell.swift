@@ -14,4 +14,5 @@ class CompanyTableViewCell : UITableViewCell {
     @IBOutlet weak var cName: UILabel!
     @IBOutlet weak var cKind: UILabel!
     @IBOutlet weak var cFollow: UIButton!
+    
 }
