@@ -8,7 +8,15 @@
 
 import UIKit
 
+//delegate protocol
+protocol PickChangedDelegate {
+    func passArrayData() -> [String]
+}
+
 class FollowingCompanyVC: UIViewController {
+    
+    //delgate 선언
+    var delegate : PickChangedDelegate?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -44,10 +52,6 @@ class FollowingCompanyVC: UIViewController {
         
         //마지막 : 보여줘!!
         self.present(optionMenu, animated: true, completion: nil)
-        
-        
-        
-        
     }
     //
     //    @objc func dataDelete(_ sender: UIButton){
@@ -68,6 +72,7 @@ class FollowingCompanyVC: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        
         initRefresh()
         
         
@@ -76,6 +81,34 @@ class FollowingCompanyVC: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    
+//    /*
+//     데이터 보내기 함수.
+//     */
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let popularVC = segue.destination as? PickViewController else {
+//            return
+//        }
+//        print("cNames : \(self.cNames)")
+//        popularVC.followings = self.cNames
+//    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(false)
+        let pickCompanyVC = self.storyboard?.instantiateViewController(withIdentifier: "PickViewController") as! PickViewController
+        //print("followings : \(followingVC.cNames)")
+        pickCompanyVC.followings = cNames
+        print("my info view will disappear : \(pickCompanyVC.followings)")
+    }
+    
     
     
     /*
@@ -103,6 +136,7 @@ class FollowingCompanyVC: UIViewController {
             tableView.addSubview(refresh)
         }
     }
+
     
     @objc func updateUI(refresh: UIRefreshControl) {
         refresh.endRefreshing() // refresh 종료

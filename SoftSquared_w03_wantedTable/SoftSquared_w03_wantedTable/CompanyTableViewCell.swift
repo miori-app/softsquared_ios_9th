@@ -15,4 +15,14 @@ class CompanyTableViewCell : UITableViewCell {
     @IBOutlet weak var cKind: UILabel!
     @IBOutlet weak var cFollow: UIButton!
     
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        cFollow.setTitle("팔로우", for: .normal)
+        cFollow.backgroundColor = UIColor.systemBlue
+        cFollow.setTitleColor(UIColor.white, for: .normal)
+        cFollow.layer.borderColor = UIColor.systemBlue.cgColor
+        cFollow.layer.borderWidth = 1.0
+    }
 }

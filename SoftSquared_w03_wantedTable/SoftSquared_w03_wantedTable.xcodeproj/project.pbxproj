@@ -19,6 +19,7 @@
 		3D2E964224DC63AD000F0ED0 /* FollowingCompanyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E964124DC63AD000F0ED0 /* FollowingCompanyVC.swift */; };
 		3D2E964624DC6CD2000F0ED0 /* CustomUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */; };
 		3D73C8AF24DDB52300D802C2 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73C8AE24DDB52300D802C2 /* CompanyTableViewCell.swift */; };
+		3DFD014624DF22F7009EB694 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD014524DF22F7009EB694 /* TabbarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		3D2E964124DC63AD000F0ED0 /* FollowingCompanyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingCompanyVC.swift; sourceTree = "<group>"; };
 		3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITableViewCell.swift; sourceTree = "<group>"; };
 		3D73C8AE24DDB52300D802C2 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		3DFD014524DF22F7009EB694 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				3D2E964124DC63AD000F0ED0 /* FollowingCompanyVC.swift */,
 				3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */,
 				3D73C8AE24DDB52300D802C2 /* CompanyTableViewCell.swift */,
+				3DFD014524DF22F7009EB694 /* TabbarController.swift */,
 			);
 			path = SoftSquared_w03_wantedTable;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2E963E24DC6388000F0ED0 /* PickViewController.swift in Sources */,
+				3DFD014624DF22F7009EB694 /* TabbarController.swift in Sources */,
 				3D2E964224DC63AD000F0ED0 /* FollowingCompanyVC.swift in Sources */,
 				3D2E964624DC6CD2000F0ED0 /* CustomUITableViewCell.swift in Sources */,
 				3D73C8AF24DDB52300D802C2 /* CompanyTableViewCell.swift in Sources */,

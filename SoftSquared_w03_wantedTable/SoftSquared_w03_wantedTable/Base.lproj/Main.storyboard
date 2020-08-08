@@ -10,7 +10,7 @@
         <!--인기 회사-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PickViewController" customModule="SoftSquared_w03_wantedTable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickViewController" id="BYZ-38-t0r" customClass="PickViewController" customModule="SoftSquared_w03_wantedTable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,11 +105,11 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="137.94642857142856"/>
         </scene>
-        <!--내 정보-->
+        <!--FollowingCompanyVC-->
         <scene sceneID="GBD-PG-cKc">
             <objects>
-                <viewController id="qxz-Qk-KgP" customClass="FollowingCompanyVC" customModule="SoftSquared_w03_wantedTable" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cjp-Q7-7hu">
+                <viewController storyboardIdentifier="FollowingCompanyVC" title="FollowingCompanyVC" id="qxz-Qk-KgP" customClass="FollowingCompanyVC" customModule="SoftSquared_w03_wantedTable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="FollowingComapnyVC" id="cjp-Q7-7hu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUB-Rx-aOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="864.50892857142856"/>
+            <point key="canvasLocation" x="2010" y="865"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dKA-qB-QoN">

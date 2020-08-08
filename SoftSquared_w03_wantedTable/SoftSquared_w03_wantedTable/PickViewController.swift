@@ -9,29 +9,44 @@
 import UIKit
 
 
-class PickViewController: UIViewController {
+class PickViewController: UIViewController{
     
+
     @IBOutlet weak var tableView: UITableView!
     
     // 해당 cell의 버튼 변경
     @objc func didTap(_ sender: UIButton){
         BtnStyle(your_btn: sender)
+
     }
     
     var cNames = ["카카오(KAKAO)","왓챠","쿠팡","NAVER Corp(네이버)","우아한형제들(배달의민족)","엔에이치엔(NHN)","딜리버리히어로 코리아 (Delivery Hero Korea)","원티드랩","화해(버드뷰)"]
     var cLogos = ["kakao","watcha","coupang","naver","woowahan","nhn","deliveryhero","wanted","birdview"]
     var cKinds = ["IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠"]
+
     
-    var myPickNames = ["원티드랩"]
+    //팔로잉 기업 배열
+    var followings = Array<String>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewdidload")
         navigationItem.title = "인기 회사"
         
         tableView.dataSource = self
         tableView.delegate = self
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
         
-        
+        print("viewillAppear")
+        super.viewWillAppear(false)
+        let followingVC = self.storyboard?.instantiateViewController(withIdentifier: "FollowingCompanyVC") as! FollowingCompanyVC
+        //print("followings : \(followingVC.cNames)")
+        followings = followingVC.cNames
+        print(followingVC.cNames)
     }
     
     
@@ -59,6 +74,9 @@ func BtnStyle(your_btn : UIButton) {
     your_btn.layer.borderColor = UIColor.black.cgColor
     your_btn.layer.borderWidth = 1.0
 }
+
+
+
 extension PickViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cNames.count
@@ -85,8 +103,10 @@ extension PickViewController : UITableViewDataSource {
         //didTap 함수 호출
         cell.cFollow.addTarget(self, action: #selector(didTap(_:)), for: .touchUpInside)
         
-        for a in myPickNames {
-            if cNames.contains(a), let idx = cNames.firstIndex(of: a) {
+        
+        
+        for a in followings{
+            if cNames.contains(a as! String), let idx = cNames.firstIndex(of: a as! String) {
                 //print("idx= \(idx)")
                 if indexPath.row == idx {
                     BtnStyle(your_btn: cell.cFollow)
