@@ -18,6 +18,7 @@
 		3D2E963E24DC6388000F0ED0 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E963D24DC6388000F0ED0 /* PickViewController.swift */; };
 		3D2E964224DC63AD000F0ED0 /* FollowingCompanyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E964124DC63AD000F0ED0 /* FollowingCompanyVC.swift */; };
 		3D2E964624DC6CD2000F0ED0 /* CustomUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */; };
+		3D64DD5624E12C57004B68E0 /* MySkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64DD5524E12C57004B68E0 /* MySkillVC.swift */; };
 		3D73C8AF24DDB52300D802C2 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73C8AE24DDB52300D802C2 /* CompanyTableViewCell.swift */; };
 		3DFD014624DF22F7009EB694 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD014524DF22F7009EB694 /* TabbarController.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		3D2E963D24DC6388000F0ED0 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		3D2E964124DC63AD000F0ED0 /* FollowingCompanyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingCompanyVC.swift; sourceTree = "<group>"; };
 		3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITableViewCell.swift; sourceTree = "<group>"; };
+		3D64DD5524E12C57004B68E0 /* MySkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySkillVC.swift; sourceTree = "<group>"; };
 		3D73C8AE24DDB52300D802C2 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		3DFD014524DF22F7009EB694 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 				3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */,
 				3D73C8AE24DDB52300D802C2 /* CompanyTableViewCell.swift */,
 				3DFD014524DF22F7009EB694 /* TabbarController.swift */,
+				3D64DD5524E12C57004B68E0 /* MySkillVC.swift */,
 			);
 			path = SoftSquared_w03_wantedTable;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				3D2E964224DC63AD000F0ED0 /* FollowingCompanyVC.swift in Sources */,
 				3D2E964624DC6CD2000F0ED0 /* CustomUITableViewCell.swift in Sources */,
 				3D73C8AF24DDB52300D802C2 /* CompanyTableViewCell.swift in Sources */,
+				3D64DD5624E12C57004B68E0 /* MySkillVC.swift in Sources */,
 				3D2E961224DC6149000F0ED0 /* ViewController.swift in Sources */,
 				3D2E960E24DC6149000F0ED0 /* AppDelegate.swift in Sources */,
 				3D2E961024DC6149000F0ED0 /* SceneDelegate.swift in Sources */,

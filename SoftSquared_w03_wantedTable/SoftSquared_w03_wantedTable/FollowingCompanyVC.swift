@@ -10,10 +10,15 @@ import UIKit
 
 //delegate protocol
 protocol PickChangedDelegate {
-    func passArrayData() -> [String]
+    func showFollowing()
 }
 
 class FollowingCompanyVC: UIViewController {
+    
+    var pickView : PickViewController?
+    
+    var tapCName : String?
+    
     
     //delgate 선언
     var delegate : PickChangedDelegate?
@@ -27,7 +32,9 @@ class FollowingCompanyVC: UIViewController {
         // sender의 tag는 인덱스로 생각해도 될듯
         let idx = sender.tag
         
-        let tapCName = cNames[idx]
+        //삭제될 회사이름
+        tapCName = cNames[idx]
+        print(tapCName!)
         
         
         // ActionSheet 띄우기
@@ -41,6 +48,7 @@ class FollowingCompanyVC: UIViewController {
             self.cLogos.remove(at: idx)
             print(self.cNames)
             print("ok")
+            
         })
         //let deleteAction = UIAlertAction(title: "팔로우 취소", style: .destructive, handler: )
         //세번째 : 밑에 취소 버튼
@@ -68,12 +76,14 @@ class FollowingCompanyVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.title = "내 정보"
         
         tableView.dataSource = self
         tableView.delegate = self
         
         initRefresh()
+
         
         
         //        let myCustomCell = UINib(nibName: "CustomUITalbeViewCell", bundle: nil)
@@ -97,6 +107,7 @@ class FollowingCompanyVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
+        print("my infor view will appear")
 
         
     }

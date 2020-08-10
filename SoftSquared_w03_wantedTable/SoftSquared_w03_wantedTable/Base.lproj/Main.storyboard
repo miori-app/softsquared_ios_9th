@@ -196,14 +196,36 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="C14-J9-HFf"/>
                     </view>
-                    <navigationItem key="navigationItem" title="내 정보" id="BFW-66-ICH"/>
+                    <navigationItem key="navigationItem" title="내 정보" id="BFW-66-ICH">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="person.fill" catalog="system" id="3GG-aJ-wcW">
+                            <connections>
+                                <segue destination="c9X-wc-Kq1" kind="show" id="7aa-14-XYF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="TU8-Kb-C91" id="w1B-H5-FGD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUB-Rx-aOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2010" y="865"/>
+            <point key="canvasLocation" x="1958" y="865"/>
+        </scene>
+        <!--내 스킬-->
+        <scene sceneID="F2s-fJ-hq4">
+            <objects>
+                <viewController id="c9X-wc-Kq1" customClass="MySkillVC" customModule="SoftSquared_w03_wantedTable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qat-bA-5NY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gyC-ss-T4R"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="내 스킬" id="sIQ-2Z-mbO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBd-B1-dsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2767" y="865"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dKA-qB-QoN">
