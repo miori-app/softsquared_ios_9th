@@ -10,11 +10,11 @@ import UIKit
 
 class MySkillVC : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    // Define the array to use in the Table.
-    private let iOSItems: [String] = ["python", "c", "swift", "java"]
-    private let AOSItems: [String] = ["iOS", "Data Analysis", "Data visulaization"]
+    // table view 에서 사용할 데이터 정의
+    private var myLang: [String] = ["python", "c", "swift", "java"]
+    private var myInterested: [String] = ["iOS", "Data Analysis", "Data visulaization"]
     
-    // Define the array to be used in Section.
+    // section 정의
     private let sections: [String] = ["language", "interested in"]
     
     lazy var tableView: UITableView = {
@@ -41,28 +41,34 @@ class MySkillVC : UIViewController, UITableViewDataSource, UITableViewDelegate {
         
     }
     
-    // Returns the number of sections.
-    func numberOfSections(in tableView: UITableView) -> Int { return sections.count }
-    // Returns the title of the section.
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? { return sections[section] }
+    // section수 return 함수
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    // section제목 return
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
+    }
     // Called when Cell is selected.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            print("Value: \(iOSItems[indexPath.row])")
+            print("Value: \(myLang[indexPath.row])")
         } else if indexPath.section == 1 {
-            print("Value: \(AOSItems[indexPath.row])")
+            print("Value: \(myInterested[indexPath.row])")
         } else {
             return
-        } }
-
+        }
+        
+    }
+    
     
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return iOSItems.count
+            return myLang.count
         } else if section == 1 {
-            return AOSItems.count }
+            return myInterested.count }
         else {
             return 0 }
         
@@ -71,10 +77,13 @@ class MySkillVC : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sectionTableViewCell", for: indexPath)
-        if indexPath.section == 0 { cell.textLabel?.text = "\(iOSItems[indexPath.row])" } else if indexPath.section == 1 { cell.textLabel?.text = "\(AOSItems[indexPath.row])"
+        if indexPath.section == 0 {
+            cell.textLabel?.text = "\(myLang[indexPath.row])"
+            
+        } else if indexPath.section == 1 {
+            cell.textLabel?.text = "\(myInterested[indexPath.row])"
         } else {
             return UITableViewCell()
-            
         }
         return cell
         
