@@ -16,8 +16,16 @@ class MySkillAddVC : UIViewController, AddSkill  {
     func AddMySkill() {
         let mylanInput = lanInput.text!
         let myinterInput = interInput.text!
+        if mylanInput.count > 0 && myinterInput.count>0{
         prevViewController?.myLang.append(mylanInput)
         prevViewController?.myInterested.append(myinterInput)
+        } else if mylanInput.count > 0 && myinterInput.count == 0 {
+            prevViewController?.myLang.append(mylanInput)
+        } else if mylanInput.count == 0 && myinterInput.count > 0 {
+            prevViewController?.myInterested.append(myinterInput)
+        } else {
+            popUpAlert()
+        }
         //prevViewController?.tableView.reloadData()
         //print(prevViewController?.myLang ?? "")
     }
@@ -54,4 +62,16 @@ class MySkillAddVC : UIViewController, AddSkill  {
         
         prevViewController?.tableView.reloadData()
     }
+    
+    func popUpAlert(){
+        
+        print("입력안함")
+        let alert = UIAlertController(title: "❗️No Input", message: "둘 중 하나는 입력을 해주세여", preferredStyle: .alert)
+        let okBtn = UIAlertAction(title: "OK",  style: .default, handler: nil)
+        alert.addAction(okBtn)
+        present(alert, animated: true, completion: nil)
+        //userInfo?.text! = "로그인을 해주세요"
+    }
+    
 }
+
