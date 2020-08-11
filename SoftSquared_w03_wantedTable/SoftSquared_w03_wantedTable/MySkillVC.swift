@@ -8,14 +8,30 @@
 
 import UIKit
 
+protocol AddSkill {
+    func AddMySkill()
+}
+
 class MySkillVC : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
+    var delegate : AddSkill?
+    
+    @IBAction func didAdd(_ sender: Any) {
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "MySkillAddVC") as! MySkillAddVC
+        //나를 넘김 (2. self정의로 이한몸 다바쳐서 간닷)
+        secondViewController.prevViewController = self
+        //이 한몸 다바쳐서 간거..
+        self.present(secondViewController, animated: true, completion: nil)
+    }
+    
     // table view 에서 사용할 데이터 정의
-    private var myLang: [String] = ["python", "c", "swift", "java"]
-    private var myInterested: [String] = ["iOS", "Data Analysis", "Data visulaization"]
+    var myLang: [String] = ["python", "c", "swift", "java"]
+    var myInterested: [String] = ["iOS", "Data Analysis", "Data visulaization"]
     
     // section 정의
     private let sections: [String] = ["language", "interested in"]
+    
     
     lazy var tableView: UITableView = {
         // Get the height of the Status Bar.
@@ -37,10 +53,17 @@ class MySkillVC : UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         // Add UITableView on view
+        tableView.reloadData()
+        print("reload : \(myLang)")
         self.view.addSubview(self.tableView)
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+        print(myInterested)
+        print("myskillvc appear")
+    }
     // section수 return 함수
     func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count

@@ -20,6 +20,7 @@
 		3D2E964624DC6CD2000F0ED0 /* CustomUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */; };
 		3D64DD5624E12C57004B68E0 /* MySkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64DD5524E12C57004B68E0 /* MySkillVC.swift */; };
 		3D73C8AF24DDB52300D802C2 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D73C8AE24DDB52300D802C2 /* CompanyTableViewCell.swift */; };
+		3D74232E24E24F57008B78D8 /* MySkillAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74232D24E24F57008B78D8 /* MySkillAddVC.swift */; };
 		3DFD014624DF22F7009EB694 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFD014524DF22F7009EB694 /* TabbarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		3D2E964524DC6CD2000F0ED0 /* CustomUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITableViewCell.swift; sourceTree = "<group>"; };
 		3D64DD5524E12C57004B68E0 /* MySkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySkillVC.swift; sourceTree = "<group>"; };
 		3D73C8AE24DDB52300D802C2 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		3D74232D24E24F57008B78D8 /* MySkillAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySkillAddVC.swift; sourceTree = "<group>"; };
 		3DFD014524DF22F7009EB694 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				3D73C8AE24DDB52300D802C2 /* CompanyTableViewCell.swift */,
 				3DFD014524DF22F7009EB694 /* TabbarController.swift */,
 				3D64DD5524E12C57004B68E0 /* MySkillVC.swift */,
+				3D74232D24E24F57008B78D8 /* MySkillAddVC.swift */,
 			);
 			path = SoftSquared_w03_wantedTable;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				3D2E964624DC6CD2000F0ED0 /* CustomUITableViewCell.swift in Sources */,
 				3D73C8AF24DDB52300D802C2 /* CompanyTableViewCell.swift in Sources */,
 				3D64DD5624E12C57004B68E0 /* MySkillVC.swift in Sources */,
+				3D74232E24E24F57008B78D8 /* MySkillAddVC.swift in Sources */,
 				3D2E961224DC6149000F0ED0 /* ViewController.swift in Sources */,
 				3D2E960E24DC6149000F0ED0 /* AppDelegate.swift in Sources */,
 				3D2E961024DC6149000F0ED0 /* SceneDelegate.swift in Sources */,
