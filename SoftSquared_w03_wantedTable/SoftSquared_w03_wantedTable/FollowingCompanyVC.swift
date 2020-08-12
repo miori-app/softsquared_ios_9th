@@ -13,7 +13,27 @@ protocol PickChangedDelegate {
     func showFollowing()
 }
 
-class FollowingCompanyVC: UIViewController {
+class FollowingCompanyVC: UIViewController, AddFollowing {
+    
+    func sendAddFollowing() {
+        print(mycNames)
+    }
+    
+//    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+//          self.tableView.reloadData()
+//          refreshControl.endRefreshing()
+//      }
+//
+//      lazy var refreshControl: UIRefreshControl = {
+//          let refreshControl = UIRefreshControl()
+//          refreshControl.addTarget(self, action:
+//              #selector(handleRefresh(_:)),
+//                                   for: UIControl.Event.valueChanged)
+//          refreshControl.tintColor = UIColor.red
+//
+//          return refreshControl
+//      }()
+    
     
     var pickView : PickViewController?
     
@@ -33,20 +53,20 @@ class FollowingCompanyVC: UIViewController {
         let idx = sender.tag
         
         //삭제될 회사이름
-        tapCName = cNames[idx]
+        tapCName = mycNames[idx]
         print(tapCName!)
         
         
         // ActionSheet 띄우기
         //첫번쨰 :  문구
-        let optionMenu = UIAlertController(title: nil, message: "기업 '\(tapCName)' 팔로우 취소하시겠어요?", preferredStyle: .actionSheet)
+        let optionMenu = UIAlertController(title: nil, message: "기업 '\(tapCName!)' 팔로우 취소하시겠어요?", preferredStyle: .actionSheet)
         //두번째 : 액션 선택지
         let deleteAction = UIAlertAction(title: "팔로우 취소", style: .destructive, handler: { (alert: UIAlertAction!) -> Void in
             print("Yes")
-            self.cNames.remove(at: idx)
+            self.mycNames.remove(at: idx)
             self.cLocs.remove(at: idx)
-            self.cLogos.remove(at: idx)
-            print(self.cNames)
+            self.mycLogos.remove(at: idx)
+            print(self.mycNames)
             print("ok")
             
         })
@@ -60,6 +80,16 @@ class FollowingCompanyVC: UIViewController {
         
         //마지막 : 보여줘!!
         self.present(optionMenu, animated: true, completion: nil)
+        
+        // 인기회사 뷰에 반영
+        /*
+         이때 navi랑 tab을 다 embed in 해놓아서 uinavigationcontroller도 써줘야함
+         */
+        if let vc1 = (self.tabBarController?.viewControllers![0] as? UINavigationController)?.viewControllers[0] as? PickViewController {
+           //access your VC here
+            vc1.followings.remove(at: idx)
+        }
+        //let vc1 = (self.tabBarController?.viewControllers?[0])! as! PickViewController
     }
     //
     //    @objc func dataDelete(_ sender: UIButton){
@@ -70,8 +100,8 @@ class FollowingCompanyVC: UIViewController {
     //        print(cNames)
     //    }
     
-    var cNames = ["화해(버드뷰)","원티드랩","왓챠"]
-    var cLogos = ["birdview","wanted","watcha"]
+    var mycNames = ["화해(버드뷰)","원티드랩","왓챠"]
+    var mycLogos = ["birdview","wanted","watcha"]
     var cLocs = ["서울특별시 마포구 와우산로 121","서울 송파구","서울 강남구"]
     
     override func viewDidLoad() {
@@ -81,7 +111,6 @@ class FollowingCompanyVC: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
-        
         initRefresh()
 
         
@@ -108,6 +137,7 @@ class FollowingCompanyVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         print("my infor view will appear")
+        tableView.reloadData()
 
         
     }
@@ -116,7 +146,7 @@ class FollowingCompanyVC: UIViewController {
         super.viewWillDisappear(false)
         let pickCompanyVC = self.storyboard?.instantiateViewController(withIdentifier: "PickViewController") as! PickViewController
         //print("followings : \(followingVC.cNames)")
-        pickCompanyVC.followings = cNames
+        pickCompanyVC.followings = mycNames
         print("my info view will disappear : \(pickCompanyVC.followings)")
     }
     
@@ -159,15 +189,15 @@ class FollowingCompanyVC: UIViewController {
 
 extension FollowingCompanyVC : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cNames.count
+        return mycNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomUITalbeViewCell", for: indexPath) as! CustomUITalbeViewCell
         
-        cell.companyLogo.image = UIImage(named: cLogos[indexPath.row])
+        cell.companyLogo.image = UIImage(named: mycLogos[indexPath.row])
         //print("ok")
-        cell.companyName.text = cNames[indexPath.row]
+        cell.companyName.text = mycNames[indexPath.row]
         cell.companyLoc.text = cLocs[indexPath.row]
         
         //버튼 태그에 인덱스를 부여

@@ -18,6 +18,7 @@ class CompanyTableViewCell : UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        //print("prepare for reuse")
         
         cFollow.setTitle("팔로우", for: .normal)
         cFollow.backgroundColor = UIColor.systemBlue

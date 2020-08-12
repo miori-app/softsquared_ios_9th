@@ -13,16 +13,32 @@ protocol AddFollowing {
 }
 
 class PickViewController: UIViewController, PickChangedDelegate{
-
+    
+    
     func showFollowing() {
-
+        print(self.cNames)
     }
     
     
     var followingTV : FollowingCompanyVC?
-
     
-
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
+    }
+    
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action:
+            #selector(handleRefresh(_:)),
+                                 for: UIControl.Event.valueChanged)
+        refreshControl.tintColor = UIColor.red
+        
+        return refreshControl
+    }()
+    
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     // 해당 cell의 버튼 변경
@@ -31,12 +47,22 @@ class PickViewController: UIViewController, PickChangedDelegate{
         BtnStyle(your_btn: sender)
         followings.append(cNames[sender.tag])
         print("add : \(followings)")
+        
+        //팔로잉을 했으면 내정보 팔로잉으로 넘겨줘 !!
+        // 그리고 그거는 내가 delegate해서 대신 할거임!!
+        if let vc2 = (self.tabBarController?.viewControllers![1] as? UINavigationController)?.viewControllers[0] as? FollowingCompanyVC {
+            vc2.mycNames.append(cNames[sender.tag])
+            vc2.mycLogos.append(cLogos[sender.tag])
+            vc2.cLocs.append(clocs[sender.tag])
+            print("pass : \(vc2.mycNames)")
+        }
     }
     
     var cNames = ["카카오(KAKAO)","왓챠","쿠팡","NAVER Corp(네이버)","우아한형제들(배달의민족)","엔에이치엔(NHN)","딜리버리히어로 코리아 (Delivery Hero Korea)","원티드랩","화해(버드뷰)"]
     var cLogos = ["kakao","watcha","coupang","naver","woowahan","nhn","deliveryhero","wanted","birdview"]
     var cKinds = ["IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠","IT, 컨텐츠"]
-
+    var clocs = ["성남 분당구 판교역로 234 에이치스퀘어", "서울 강남구","서울시 송파구 송파대로 570" , "경기도 성남시 분당구 정자동 178-1","서울시 송파구 위례성대로2장은빌딩" , "경기도 성남시 분당구 삼펴옹 629", "서울특별시 서초구 서초대로 38길" ,"서울 송파구", "서울특별시 마포구 와우산로 121"]
+    
     
     //팔로잉 기업 배열
     var followings = Array<String>()
@@ -56,25 +82,27 @@ class PickViewController: UIViewController, PickChangedDelegate{
         tableView.dataSource = self
         tableView.delegate = self
         
-        followingTV?.delegate = self
+        //초기
+        //        //선택된 값들 받아오기 (실패)
+        let followingVC = self.storyboard?.instantiateViewController(withIdentifier: "FollowingCompanyVC") as! FollowingCompanyVC
+        //        //print("followings : \(followingVC.cNames)")
+        followingVC.tableView?.reloadData()
+        followings = followingVC.mycNames
+        //        print("viewillAppear : \(followings)")
+        showFollowing()
         
-
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         tableView.reloadData()
-    
-        
-//        let followingVC = self.tabBarController?.viewControllers[0]
         
         
-        //선택된 값들 받아오기 (실패)
-        let followingVC = self.storyboard?.instantiateViewController(withIdentifier: "FollowingCompanyVC") as! FollowingCompanyVC
-        //print("followings : \(followingVC.cNames)")
-        followingVC.tableView?.reloadData()
-        followings = followingVC.cNames
-        print("viewillAppear : \(followings)")
+        
+        self.tableView.addSubview(self.refreshControl)
+        print("followings : \(followings)")
         showFollowing()
     }
     
