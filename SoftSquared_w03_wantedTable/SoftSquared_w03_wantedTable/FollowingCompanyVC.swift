@@ -19,24 +19,10 @@ class FollowingCompanyVC: UIViewController, AddFollowing {
         print(mycNames)
     }
     
-//    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
-//          self.tableView.reloadData()
-//          refreshControl.endRefreshing()
-//      }
-//
-//      lazy var refreshControl: UIRefreshControl = {
-//          let refreshControl = UIRefreshControl()
-//          refreshControl.addTarget(self, action:
-//              #selector(handleRefresh(_:)),
-//                                   for: UIControl.Event.valueChanged)
-//          refreshControl.tintColor = UIColor.red
-//
-//          return refreshControl
-//      }()
-    
     
     var pickView : PickViewController?
     
+    //액션시트에서 띄울 회사 이름 (추후에 옵셔널 제거 해줄것)
     var tapCName : String?
     
     
