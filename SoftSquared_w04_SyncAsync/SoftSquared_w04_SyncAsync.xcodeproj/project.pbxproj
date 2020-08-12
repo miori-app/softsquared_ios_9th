@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D121FF124E482B100E310F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D121FF024E482B100E310F8 /* AppDelegate.swift */; };
+		3D121FF324E482B100E310F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D121FF224E482B100E310F8 /* SceneDelegate.swift */; };
+		3D121FF524E482B100E310F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D121FF424E482B100E310F8 /* ViewController.swift */; };
+		3D121FF824E482B100E310F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D121FF624E482B100E310F8 /* Main.storyboard */; };
+		3D121FFA24E482B300E310F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D121FF924E482B300E310F8 /* Assets.xcassets */; };
+		3D121FFD24E482B300E310F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D121FFB24E482B300E310F8 /* LaunchScreen.storyboard */; };
+		3D12200824E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12200724E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests.swift */; };
+		3D12201324E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D12201224E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D12200424E482B300E310F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D121FE524E482B100E310F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D121FEC24E482B100E310F8;
+			remoteInfo = SoftSquared_w04_SyncAsync;
+		};
+		3D12200F24E482B300E310F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D121FE524E482B100E310F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D121FEC24E482B100E310F8;
+			remoteInfo = SoftSquared_w04_SyncAsync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D121FED24E482B100E310F8 /* SoftSquared_w04_SyncAsync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftSquared_w04_SyncAsync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D121FF024E482B100E310F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D121FF224E482B100E310F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D121FF424E482B100E310F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D121FF724E482B100E310F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D121FF924E482B300E310F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D121FFC24E482B300E310F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D121FFE24E482B300E310F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D12200324E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftSquared_w04_SyncAsyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D12200724E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSquared_w04_SyncAsyncTests.swift; sourceTree = "<group>"; };
+		3D12200924E482B300E310F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D12200E24E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftSquared_w04_SyncAsyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D12201224E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSquared_w04_SyncAsyncUITests.swift; sourceTree = "<group>"; };
+		3D12201424E482B300E310F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D121FEA24E482B100E310F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12200024E482B300E310F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12200B24E482B300E310F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D121FE424E482B100E310F8 = {
+			isa = PBXGroup;
+			children = (
+				3D121FEF24E482B100E310F8 /* SoftSquared_w04_SyncAsync */,
+				3D12200624E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests */,
+				3D12201124E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests */,
+				3D121FEE24E482B100E310F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D121FEE24E482B100E310F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D121FED24E482B100E310F8 /* SoftSquared_w04_SyncAsync.app */,
+				3D12200324E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests.xctest */,
+				3D12200E24E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D121FEF24E482B100E310F8 /* SoftSquared_w04_SyncAsync */ = {
+			isa = PBXGroup;
+			children = (
+				3D121FF024E482B100E310F8 /* AppDelegate.swift */,
+				3D121FF224E482B100E310F8 /* SceneDelegate.swift */,
+				3D121FF424E482B100E310F8 /* ViewController.swift */,
+				3D121FF624E482B100E310F8 /* Main.storyboard */,
+				3D121FF924E482B300E310F8 /* Assets.xcassets */,
+				3D121FFB24E482B300E310F8 /* LaunchScreen.storyboard */,
+				3D121FFE24E482B300E310F8 /* Info.plist */,
+			);
+			path = SoftSquared_w04_SyncAsync;
+			sourceTree = "<group>";
+		};
+		3D12200624E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D12200724E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests.swift */,
+				3D12200924E482B300E310F8 /* Info.plist */,
+			);
+			path = SoftSquared_w04_SyncAsyncTests;
+			sourceTree = "<group>";
+		};
+		3D12201124E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D12201224E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests.swift */,
+				3D12201424E482B300E310F8 /* Info.plist */,
+			);
+			path = SoftSquared_w04_SyncAsyncUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D121FEC24E482B100E310F8 /* SoftSquared_w04_SyncAsync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D12201724E482B300E310F8 /* Build configuration list for PBXNativeTarget "SoftSquared_w04_SyncAsync" */;
+			buildPhases = (
+				3D121FE924E482B100E310F8 /* Sources */,
+				3D121FEA24E482B100E310F8 /* Frameworks */,
+				3D121FEB24E482B100E310F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoftSquared_w04_SyncAsync;
+			productName = SoftSquared_w04_SyncAsync;
+			productReference = 3D121FED24E482B100E310F8 /* SoftSquared_w04_SyncAsync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D12200224E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D12201A24E482B300E310F8 /* Build configuration list for PBXNativeTarget "SoftSquared_w04_SyncAsyncTests" */;
+			buildPhases = (
+				3D121FFF24E482B300E310F8 /* Sources */,
+				3D12200024E482B300E310F8 /* Frameworks */,
+				3D12200124E482B300E310F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D12200524E482B300E310F8 /* PBXTargetDependency */,
+			);
+			name = SoftSquared_w04_SyncAsyncTests;
+			productName = SoftSquared_w04_SyncAsyncTests;
+			productReference = 3D12200324E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D12200D24E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D12201D24E482B300E310F8 /* Build configuration list for PBXNativeTarget "SoftSquared_w04_SyncAsyncUITests" */;
+			buildPhases = (
+				3D12200A24E482B300E310F8 /* Sources */,
+				3D12200B24E482B300E310F8 /* Frameworks */,
+				3D12200C24E482B300E310F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D12201024E482B300E310F8 /* PBXTargetDependency */,
+			);
+			name = SoftSquared_w04_SyncAsyncUITests;
+			productName = SoftSquared_w04_SyncAsyncUITests;
+			productReference = 3D12200E24E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D121FE524E482B100E310F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = miori;
+				TargetAttributes = {
+					3D121FEC24E482B100E310F8 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					3D12200224E482B300E310F8 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 3D121FEC24E482B100E310F8;
+					};
+					3D12200D24E482B300E310F8 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 3D121FEC24E482B100E310F8;
+					};
+				};
+			};
+			buildConfigurationList = 3D121FE824E482B100E310F8 /* Build configuration list for PBXProject "SoftSquared_w04_SyncAsync" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D121FE424E482B100E310F8;
+			productRefGroup = 3D121FEE24E482B100E310F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D121FEC24E482B100E310F8 /* SoftSquared_w04_SyncAsync */,
+				3D12200224E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests */,
+				3D12200D24E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D121FEB24E482B100E310F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D121FFD24E482B300E310F8 /* LaunchScreen.storyboard in Resources */,
+				3D121FFA24E482B300E310F8 /* Assets.xcassets in Resources */,
+				3D121FF824E482B100E310F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12200124E482B300E310F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12200C24E482B300E310F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D121FE924E482B100E310F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D121FF524E482B100E310F8 /* ViewController.swift in Sources */,
+				3D121FF124E482B100E310F8 /* AppDelegate.swift in Sources */,
+				3D121FF324E482B100E310F8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D121FFF24E482B300E310F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D12200824E482B300E310F8 /* SoftSquared_w04_SyncAsyncTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D12200A24E482B300E310F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D12201324E482B300E310F8 /* SoftSquared_w04_SyncAsyncUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D12200524E482B300E310F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D121FEC24E482B100E310F8 /* SoftSquared_w04_SyncAsync */;
+			targetProxy = 3D12200424E482B300E310F8 /* PBXContainerItemProxy */;
+		};
+		3D12201024E482B300E310F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D121FEC24E482B100E310F8 /* SoftSquared_w04_SyncAsync */;
+			targetProxy = 3D12200F24E482B300E310F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D121FF624E482B100E310F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D121FF724E482B100E310F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D121FFB24E482B300E310F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D121FFC24E482B300E310F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D12201524E482B300E310F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D12201624E482B300E310F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D12201824E482B300E310F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_SyncAsync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-SyncAsync";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D12201924E482B300E310F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_SyncAsync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-SyncAsync";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D12201B24E482B300E310F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_SyncAsyncTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-SyncAsyncTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoftSquared_w04_SyncAsync.app/SoftSquared_w04_SyncAsync";
+			};
+			name = Debug;
+		};
+		3D12201C24E482B300E310F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_SyncAsyncTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-SyncAsyncTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoftSquared_w04_SyncAsync.app/SoftSquared_w04_SyncAsync";
+			};
+			name = Release;
+		};
+		3D12201E24E482B300E310F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_SyncAsyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-SyncAsyncUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoftSquared_w04_SyncAsync;
+			};
+			name = Debug;
+		};
+		3D12201F24E482B300E310F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_SyncAsyncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-SyncAsyncUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoftSquared_w04_SyncAsync;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D121FE824E482B100E310F8 /* Build configuration list for PBXProject "SoftSquared_w04_SyncAsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12201524E482B300E310F8 /* Debug */,
+				3D12201624E482B300E310F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D12201724E482B300E310F8 /* Build configuration list for PBXNativeTarget "SoftSquared_w04_SyncAsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12201824E482B300E310F8 /* Debug */,
+				3D12201924E482B300E310F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D12201A24E482B300E310F8 /* Build configuration list for PBXNativeTarget "SoftSquared_w04_SyncAsyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12201B24E482B300E310F8 /* Debug */,
+				3D12201C24E482B300E310F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D12201D24E482B300E310F8 /* Build configuration list for PBXNativeTarget "SoftSquared_w04_SyncAsyncUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D12201E24E482B300E310F8 /* Debug */,
+				3D12201F24E482B300E310F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D121FE524E482B100E310F8 /* Project object */;
+}
