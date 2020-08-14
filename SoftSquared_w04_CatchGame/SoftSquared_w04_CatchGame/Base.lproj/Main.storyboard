@@ -60,7 +60,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossfit_background" translatesAutoresizingMaskIntoConstraints="NO" id="Qc3-61-fcS">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weightlifting" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-J0-cEW">
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weightlifting" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-J0-cEW">
                                 <rect key="frame" x="95" y="601" width="224" height="261"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="224" id="XX0-fQ-XkK"/>
@@ -82,6 +82,9 @@
                         <viewLayoutGuide key="safeArea" id="Qib-XF-hl0"/>
                     </view>
                     <navigationItem key="navigationItem" id="fqP-s3-bYU"/>
+                    <connections>
+                        <outlet property="liftingBear" destination="VdA-J0-cEW" id="l1E-dz-jaE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdT-xq-SoW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
