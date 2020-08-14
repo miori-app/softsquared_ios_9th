@@ -12,6 +12,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var liftingBear: UIImageView!
     @IBOutlet weak var scoreLabel: UILabel!
+    var currScore : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,8 @@ class GameViewController: UIViewController {
                 //chickenbreast.center.y += 1
                 self.ChickenFall(chickenimage: chickenbreast)
                 
-                self.EatChicken(chickenimage: chickenbreast, timer1: t1, timer2: t2)
+                self.GameOver(chickenimage: chickenbreast, timer1: t1, timer2: t2)
+                self.EatChicken(chickenimage: chickenbreast)
                 
             }
             
@@ -61,8 +63,8 @@ class GameViewController: UIViewController {
         chickenimage.center.y += 1
     }
     
-    func EatChicken(chickenimage : UIImageView, timer1 : Timer, timer2 : Timer) {
-        if (chickenimage.center.y > self.liftingBear.center.y + 45) {
+    func GameOver(chickenimage : UIImageView, timer1 : Timer, timer2 : Timer) {
+        if (chickenimage.center.y > self.liftingBear.center.y + self.liftingBear.center.y/5) {
             timer1.invalidate()
             timer2.invalidate()
             
@@ -76,6 +78,18 @@ class GameViewController: UIViewController {
             }))
             
             self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func EatChicken(chickenimage : UIImageView) {
+        let halfWidthLB = self.liftingBear.bounds.size.width/2
+        let halfHeightLB = self.liftingBear.bounds.size.height/2
+        let halfWidthChicken = chickenimage.bounds.size.width/2
+        if (chickenimage.center.x - halfWidthChicken > self.liftingBear.center.x - halfWidthLB && chickenimage.center.x + halfWidthChicken < self.liftingBear.center.x + halfWidthLB && chickenimage.center.y > self.liftingBear.center.y - halfHeightLB) {
+            
+            self.currScore += 1
+            self.scoreLabel.text = "\(self.currScore)"
+            
         }
     }
     
