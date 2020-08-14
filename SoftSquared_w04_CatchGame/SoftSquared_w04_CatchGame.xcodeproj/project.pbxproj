@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D1FA84D24E6620800BF582C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA84C24E6620800BF582C /* AppDelegate.swift */; };
+		3D1FA84F24E6620800BF582C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA84E24E6620800BF582C /* SceneDelegate.swift */; };
+		3D1FA85124E6620800BF582C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA85024E6620800BF582C /* ViewController.swift */; };
+		3D1FA85424E6620800BF582C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1FA85224E6620800BF582C /* Main.storyboard */; };
+		3D1FA85624E6620900BF582C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D1FA85524E6620900BF582C /* Assets.xcassets */; };
+		3D1FA85924E6620900BF582C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1FA85724E6620900BF582C /* LaunchScreen.storyboard */; };
+		3D1FA86424E6620900BF582C /* SoftSquared_w04_CatchGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA86324E6620900BF582C /* SoftSquared_w04_CatchGameTests.swift */; };
+		3D1FA86F24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA86E24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D1FA86024E6620900BF582C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D1FA84124E6620800BF582C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D1FA84824E6620800BF582C;
+			remoteInfo = SoftSquared_w04_CatchGame;
+		};
+		3D1FA86B24E6620900BF582C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D1FA84124E6620800BF582C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D1FA84824E6620800BF582C;
+			remoteInfo = SoftSquared_w04_CatchGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D1FA84924E6620800BF582C /* SoftSquared_w04_CatchGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftSquared_w04_CatchGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1FA84C24E6620800BF582C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D1FA84E24E6620800BF582C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D1FA85024E6620800BF582C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D1FA85324E6620800BF582C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D1FA85524E6620900BF582C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D1FA85824E6620900BF582C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D1FA85A24E6620900BF582C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1FA85F24E6620900BF582C /* SoftSquared_w04_CatchGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftSquared_w04_CatchGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1FA86324E6620900BF582C /* SoftSquared_w04_CatchGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSquared_w04_CatchGameTests.swift; sourceTree = "<group>"; };
+		3D1FA86524E6620900BF582C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1FA86A24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftSquared_w04_CatchGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1FA86E24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSquared_w04_CatchGameUITests.swift; sourceTree = "<group>"; };
+		3D1FA87024E6620900BF582C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D1FA84624E6620800BF582C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1FA85C24E6620900BF582C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1FA86724E6620900BF582C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D1FA84024E6620800BF582C = {
+			isa = PBXGroup;
+			children = (
+				3D1FA84B24E6620800BF582C /* SoftSquared_w04_CatchGame */,
+				3D1FA86224E6620900BF582C /* SoftSquared_w04_CatchGameTests */,
+				3D1FA86D24E6620900BF582C /* SoftSquared_w04_CatchGameUITests */,
+				3D1FA84A24E6620800BF582C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D1FA84A24E6620800BF582C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D1FA84924E6620800BF582C /* SoftSquared_w04_CatchGame.app */,
+				3D1FA85F24E6620900BF582C /* SoftSquared_w04_CatchGameTests.xctest */,
+				3D1FA86A24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D1FA84B24E6620800BF582C /* SoftSquared_w04_CatchGame */ = {
+			isa = PBXGroup;
+			children = (
+				3D1FA84C24E6620800BF582C /* AppDelegate.swift */,
+				3D1FA84E24E6620800BF582C /* SceneDelegate.swift */,
+				3D1FA85024E6620800BF582C /* ViewController.swift */,
+				3D1FA85224E6620800BF582C /* Main.storyboard */,
+				3D1FA85524E6620900BF582C /* Assets.xcassets */,
+				3D1FA85724E6620900BF582C /* LaunchScreen.storyboard */,
+				3D1FA85A24E6620900BF582C /* Info.plist */,
+			);
+			path = SoftSquared_w04_CatchGame;
+			sourceTree = "<group>";
+		};
+		3D1FA86224E6620900BF582C /* SoftSquared_w04_CatchGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D1FA86324E6620900BF582C /* SoftSquared_w04_CatchGameTests.swift */,
+				3D1FA86524E6620900BF582C /* Info.plist */,
+			);
+			path = SoftSquared_w04_CatchGameTests;
+			sourceTree = "<group>";
+		};
+		3D1FA86D24E6620900BF582C /* SoftSquared_w04_CatchGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D1FA86E24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift */,
+				3D1FA87024E6620900BF582C /* Info.plist */,
+			);
+			path = SoftSquared_w04_CatchGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D1FA84824E6620800BF582C /* SoftSquared_w04_CatchGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1FA87324E6620900BF582C /* Build configuration list for PBXNativeTarget "SoftSquared_w04_CatchGame" */;
+			buildPhases = (
+				3D1FA84524E6620800BF582C /* Sources */,
+				3D1FA84624E6620800BF582C /* Frameworks */,
+				3D1FA84724E6620800BF582C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoftSquared_w04_CatchGame;
+			productName = SoftSquared_w04_CatchGame;
+			productReference = 3D1FA84924E6620800BF582C /* SoftSquared_w04_CatchGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D1FA85E24E6620900BF582C /* SoftSquared_w04_CatchGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1FA87624E6620900BF582C /* Build configuration list for PBXNativeTarget "SoftSquared_w04_CatchGameTests" */;
+			buildPhases = (
+				3D1FA85B24E6620900BF582C /* Sources */,
+				3D1FA85C24E6620900BF582C /* Frameworks */,
+				3D1FA85D24E6620900BF582C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D1FA86124E6620900BF582C /* PBXTargetDependency */,
+			);
+			name = SoftSquared_w04_CatchGameTests;
+			productName = SoftSquared_w04_CatchGameTests;
+			productReference = 3D1FA85F24E6620900BF582C /* SoftSquared_w04_CatchGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D1FA86924E6620900BF582C /* SoftSquared_w04_CatchGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D1FA87924E6620900BF582C /* Build configuration list for PBXNativeTarget "SoftSquared_w04_CatchGameUITests" */;
+			buildPhases = (
+				3D1FA86624E6620900BF582C /* Sources */,
+				3D1FA86724E6620900BF582C /* Frameworks */,
+				3D1FA86824E6620900BF582C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D1FA86C24E6620900BF582C /* PBXTargetDependency */,
+			);
+			name = SoftSquared_w04_CatchGameUITests;
+			productName = SoftSquared_w04_CatchGameUITests;
+			productReference = 3D1FA86A24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D1FA84124E6620800BF582C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = miori;
+				TargetAttributes = {
+					3D1FA84824E6620800BF582C = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					3D1FA85E24E6620900BF582C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 3D1FA84824E6620800BF582C;
+					};
+					3D1FA86924E6620900BF582C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 3D1FA84824E6620800BF582C;
+					};
+				};
+			};
+			buildConfigurationList = 3D1FA84424E6620800BF582C /* Build configuration list for PBXProject "SoftSquared_w04_CatchGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D1FA84024E6620800BF582C;
+			productRefGroup = 3D1FA84A24E6620800BF582C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D1FA84824E6620800BF582C /* SoftSquared_w04_CatchGame */,
+				3D1FA85E24E6620900BF582C /* SoftSquared_w04_CatchGameTests */,
+				3D1FA86924E6620900BF582C /* SoftSquared_w04_CatchGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D1FA84724E6620800BF582C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1FA85924E6620900BF582C /* LaunchScreen.storyboard in Resources */,
+				3D1FA85624E6620900BF582C /* Assets.xcassets in Resources */,
+				3D1FA85424E6620800BF582C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1FA85D24E6620900BF582C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1FA86824E6620900BF582C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D1FA84524E6620800BF582C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1FA85124E6620800BF582C /* ViewController.swift in Sources */,
+				3D1FA84D24E6620800BF582C /* AppDelegate.swift in Sources */,
+				3D1FA84F24E6620800BF582C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1FA85B24E6620900BF582C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1FA86424E6620900BF582C /* SoftSquared_w04_CatchGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D1FA86624E6620900BF582C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1FA86F24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D1FA86124E6620900BF582C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D1FA84824E6620800BF582C /* SoftSquared_w04_CatchGame */;
+			targetProxy = 3D1FA86024E6620900BF582C /* PBXContainerItemProxy */;
+		};
+		3D1FA86C24E6620900BF582C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D1FA84824E6620800BF582C /* SoftSquared_w04_CatchGame */;
+			targetProxy = 3D1FA86B24E6620900BF582C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D1FA85224E6620800BF582C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D1FA85324E6620800BF582C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D1FA85724E6620900BF582C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D1FA85824E6620900BF582C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D1FA87124E6620900BF582C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D1FA87224E6620900BF582C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D1FA87424E6620900BF582C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_CatchGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-CatchGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D1FA87524E6620900BF582C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_CatchGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-CatchGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D1FA87724E6620900BF582C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_CatchGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-CatchGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoftSquared_w04_CatchGame.app/SoftSquared_w04_CatchGame";
+			};
+			name = Debug;
+		};
+		3D1FA87824E6620900BF582C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_CatchGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-CatchGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoftSquared_w04_CatchGame.app/SoftSquared_w04_CatchGame";
+			};
+			name = Release;
+		};
+		3D1FA87A24E6620900BF582C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_CatchGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-CatchGameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoftSquared_w04_CatchGame;
+			};
+			name = Debug;
+		};
+		3D1FA87B24E6620900BF582C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SoftSquared_w04_CatchGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miori.dev-ios.SoftSquared-w04-CatchGameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoftSquared_w04_CatchGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D1FA84424E6620800BF582C /* Build configuration list for PBXProject "SoftSquared_w04_CatchGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1FA87124E6620900BF582C /* Debug */,
+				3D1FA87224E6620900BF582C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D1FA87324E6620900BF582C /* Build configuration list for PBXNativeTarget "SoftSquared_w04_CatchGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1FA87424E6620900BF582C /* Debug */,
+				3D1FA87524E6620900BF582C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D1FA87624E6620900BF582C /* Build configuration list for PBXNativeTarget "SoftSquared_w04_CatchGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1FA87724E6620900BF582C /* Debug */,
+				3D1FA87824E6620900BF582C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D1FA87924E6620900BF582C /* Build configuration list for PBXNativeTarget "SoftSquared_w04_CatchGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D1FA87A24E6620900BF582C /* Debug */,
+				3D1FA87B24E6620900BF582C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D1FA84124E6620800BF582C /* Project object */;
+}
