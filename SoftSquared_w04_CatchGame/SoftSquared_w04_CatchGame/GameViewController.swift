@@ -90,6 +90,8 @@ class GameViewController: UIViewController {
             self.currScore += 1
             self.scoreLabel.text = "\(self.currScore)"
             
+            chickenimage.center.y = -1000000
+            
         }
     }
     
