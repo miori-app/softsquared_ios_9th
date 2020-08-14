@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="gJ9-XN-Vl9">
             <objects>
-                <viewController id="avk-9i-1sP" sceneMemberID="viewController">
+                <viewController id="avk-9i-1sP" customClass="GameViewController" customModule="SoftSquared_w04_CatchGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nZc-lr-sig">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

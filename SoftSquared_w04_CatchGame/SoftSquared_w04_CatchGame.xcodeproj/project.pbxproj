@@ -16,6 +16,7 @@
 		3D1FA86424E6620900BF582C /* SoftSquared_w04_CatchGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA86324E6620900BF582C /* SoftSquared_w04_CatchGameTests.swift */; };
 		3D1FA86F24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA86E24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift */; };
 		3D1FA87F24E6678000BF582C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA87E24E6678000BF582C /* HomeViewController.swift */; };
+		3D1FA88124E66C9400BF582C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA88024E66C9400BF582C /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3D1FA86E24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSquared_w04_CatchGameUITests.swift; sourceTree = "<group>"; };
 		3D1FA87024E6620900BF582C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D1FA87E24E6678000BF582C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3D1FA88024E66C9400BF582C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				3D1FA85724E6620900BF582C /* LaunchScreen.storyboard */,
 				3D1FA85A24E6620900BF582C /* Info.plist */,
 				3D1FA87E24E6678000BF582C /* HomeViewController.swift */,
+				3D1FA88024E66C9400BF582C /* GameViewController.swift */,
 			);
 			path = SoftSquared_w04_CatchGame;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1FA88124E66C9400BF582C /* GameViewController.swift in Sources */,
 				3D1FA85124E6620800BF582C /* ViewController.swift in Sources */,
 				3D1FA87F24E6678000BF582C /* HomeViewController.swift in Sources */,
 				3D1FA84D24E6620800BF582C /* AppDelegate.swift in Sources */,
