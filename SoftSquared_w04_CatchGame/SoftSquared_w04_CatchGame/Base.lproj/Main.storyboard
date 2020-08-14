@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="SoftSquared_w04_CatchGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossfit_background" translatesAutoresizingMaskIntoConstraints="NO" id="q7G-id-jRf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x8-ce-I0y">
+                                <rect key="frame" x="137" y="722" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6x8-ce-I0y" secondAttribute="height" multiplier="1:1" id="5br-nW-7RZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="UnJ-AT-9a0"/>
+                                    <constraint firstAttribute="width" constant="140" id="bPi-YQ-ad0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="tN4-GG-as5"/>
+                                    <constraint firstAttribute="height" constant="140" id="ycj-OT-8fV"/>
+                                </constraints>
+                                <state key="normal" image="startButton"/>
+                                <connections>
+                                    <segue destination="avk-9i-1sP" kind="presentation" modalPresentationStyle="fullScreen" id="cRF-dF-wMf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="q7G-id-jRf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="33S-Zt-iz9"/>
+                            <constraint firstItem="6x8-ce-I0y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Uy-r2-JYv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q7G-id-jRf" secondAttribute="trailing" id="771-mW-UIN"/>
+                            <constraint firstItem="6x8-ce-I0y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8ZN-6t-DfC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q7G-id-jRf" secondAttribute="bottom" id="LQa-4g-eFk"/>
+                            <constraint firstItem="q7G-id-jRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MTT-ox-mbP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gJ9-XN-Vl9">
+            <objects>
+                <viewController id="avk-9i-1sP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nZc-lr-sig">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossfit_background" translatesAutoresizingMaskIntoConstraints="NO" id="Qc3-61-fcS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weightlifting" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-J0-cEW">
+                                <rect key="frame" x="95" y="601" width="224" height="261"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="XX0-fQ-XkK"/>
+                                    <constraint firstAttribute="width" secondItem="VdA-J0-cEW" secondAttribute="height" multiplier="224:261" id="lUB-12-Cp6"/>
+                                    <constraint firstAttribute="height" constant="261" id="w7m-Bk-AfV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qc3-61-fcS" firstAttribute="top" secondItem="Qib-XF-hl0" secondAttribute="top" id="4bN-ii-2YR"/>
+                            <constraint firstItem="Qc3-61-fcS" firstAttribute="leading" secondItem="Qib-XF-hl0" secondAttribute="leading" id="5UJ-qG-3CZ"/>
+                            <constraint firstItem="VdA-J0-cEW" firstAttribute="leading" secondItem="Qib-XF-hl0" secondAttribute="leading" constant="95" id="THG-Qz-QcS"/>
+                            <constraint firstItem="VdA-J0-cEW" firstAttribute="bottom" secondItem="Qib-XF-hl0" secondAttribute="bottom" id="Th1-ZY-rOa"/>
+                            <constraint firstItem="Qib-XF-hl0" firstAttribute="trailing" secondItem="VdA-J0-cEW" secondAttribute="trailing" constant="95" id="ipQ-Zc-Dcx"/>
+                            <constraint firstItem="Qib-XF-hl0" firstAttribute="trailing" secondItem="Qc3-61-fcS" secondAttribute="trailing" id="jeE-v2-sxQ"/>
+                            <constraint firstItem="Qib-XF-hl0" firstAttribute="bottom" secondItem="Qc3-61-fcS" secondAttribute="bottom" id="pzJ-bw-Vfs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qib-XF-hl0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fqP-s3-bYU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdT-xq-SoW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="136.60714285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="crossfit_background" width="2163" height="2560"/>
+        <image name="startButton" width="260" height="261"/>
+        <image name="weightlifting" width="370" height="280"/>
+    </resources>
 </document>

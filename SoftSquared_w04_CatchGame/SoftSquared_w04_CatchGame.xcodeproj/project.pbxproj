@@ -15,6 +15,7 @@
 		3D1FA85924E6620900BF582C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1FA85724E6620900BF582C /* LaunchScreen.storyboard */; };
 		3D1FA86424E6620900BF582C /* SoftSquared_w04_CatchGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA86324E6620900BF582C /* SoftSquared_w04_CatchGameTests.swift */; };
 		3D1FA86F24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA86E24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift */; };
+		3D1FA87F24E6678000BF582C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FA87E24E6678000BF582C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D1FA86A24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftSquared_w04_CatchGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1FA86E24E6620900BF582C /* SoftSquared_w04_CatchGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftSquared_w04_CatchGameUITests.swift; sourceTree = "<group>"; };
 		3D1FA87024E6620900BF582C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1FA87E24E6678000BF582C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3D1FA85524E6620900BF582C /* Assets.xcassets */,
 				3D1FA85724E6620900BF582C /* LaunchScreen.storyboard */,
 				3D1FA85A24E6620900BF582C /* Info.plist */,
+				3D1FA87E24E6678000BF582C /* HomeViewController.swift */,
 			);
 			path = SoftSquared_w04_CatchGame;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D1FA85124E6620800BF582C /* ViewController.swift in Sources */,
+				3D1FA87F24E6678000BF582C /* HomeViewController.swift in Sources */,
 				3D1FA84D24E6620800BF582C /* AppDelegate.swift in Sources */,
 				3D1FA84F24E6620800BF582C /* SceneDelegate.swift in Sources */,
 			);
