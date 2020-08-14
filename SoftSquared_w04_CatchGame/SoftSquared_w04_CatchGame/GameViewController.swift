@@ -11,6 +11,7 @@ import UIKit
 class GameViewController: UIViewController {
     
     @IBOutlet weak var liftingBear: UIImageView!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,8 @@ class GameViewController: UIViewController {
                 //chickenbreast.center.y += 1
                 self.ChickenFall(chickenimage: chickenbreast)
                 
+                self.EatChicken(chickenimage: chickenbreast, timer1: t1, timer2: t2)
+                
             }
             
         }
@@ -56,6 +59,24 @@ class GameViewController: UIViewController {
     
     func ChickenFall(chickenimage : UIImageView) {
         chickenimage.center.y += 1
+    }
+    
+    func EatChicken(chickenimage : UIImageView, timer1 : Timer, timer2 : Timer) {
+        if (chickenimage.center.y > self.liftingBear.center.y + 45) {
+            timer1.invalidate()
+            timer2.invalidate()
+            
+            let alert = UIAlertController(title: "Game Over", message: "try again?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action) in
+                
+                let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                
+                self.present(home, animated: true, completion: nil)
+                
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     /* CGPoint

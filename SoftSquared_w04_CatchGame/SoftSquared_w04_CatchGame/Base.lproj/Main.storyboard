@@ -10,7 +10,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="SoftSquared_w04_CatchGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="SoftSquared_w04_CatchGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,11 +68,23 @@
                                     <constraint firstAttribute="height" constant="261" id="w7m-Bk-AfV"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1y-TU-8AD">
+                                <rect key="frame" x="349" y="66" width="22" height="41"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G1y-TU-8AD" secondAttribute="height" multiplier="22:41" id="E8G-e5-cQ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Qib-XF-hl0" firstAttribute="trailing" secondItem="G1y-TU-8AD" secondAttribute="trailing" constant="43" id="2IN-wr-eFn"/>
                             <constraint firstItem="Qc3-61-fcS" firstAttribute="top" secondItem="Qib-XF-hl0" secondAttribute="top" id="4bN-ii-2YR"/>
                             <constraint firstItem="Qc3-61-fcS" firstAttribute="leading" secondItem="Qib-XF-hl0" secondAttribute="leading" id="5UJ-qG-3CZ"/>
+                            <constraint firstItem="G1y-TU-8AD" firstAttribute="top" secondItem="Qib-XF-hl0" secondAttribute="top" constant="22" id="Hrn-RO-IB4"/>
                             <constraint firstItem="VdA-J0-cEW" firstAttribute="leading" secondItem="Qib-XF-hl0" secondAttribute="leading" constant="95" id="THG-Qz-QcS"/>
                             <constraint firstItem="VdA-J0-cEW" firstAttribute="bottom" secondItem="Qib-XF-hl0" secondAttribute="bottom" id="Th1-ZY-rOa"/>
                             <constraint firstItem="Qib-XF-hl0" firstAttribute="trailing" secondItem="VdA-J0-cEW" secondAttribute="trailing" constant="95" id="ipQ-Zc-Dcx"/>
@@ -84,6 +96,7 @@
                     <navigationItem key="navigationItem" id="fqP-s3-bYU"/>
                     <connections>
                         <outlet property="liftingBear" destination="VdA-J0-cEW" id="l1E-dz-jaE"/>
+                        <outlet property="scoreLabel" destination="G1y-TU-8AD" id="mjC-gc-wkb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdT-xq-SoW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
