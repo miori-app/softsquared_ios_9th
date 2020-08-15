@@ -59,7 +59,8 @@ class GameViewController: UIViewController {
             }
             
         }
-        //곰의 움직임 (제스처 받아서 움직여)
+        
+        //곰의 움직임 쓰레드로 보내줘!! (제스처 받아서 움직여)
         DispatchQueue.global(qos: .userInteractive).async {
             self.liftingBear.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(GameViewController.BearMove(_:))))
         }
@@ -85,10 +86,10 @@ class GameViewController: UIViewController {
             let alert = UIAlertController(title: "Game Over", message: "try again?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action) in
                 
-                let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                //let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
                 
-                self.present(home, animated: true, completion: nil)
-                
+                //self.present(home, animated: true, completion: nil)
+                self.dismiss(animated: true, completion: nil)
             }))
             
             self.present(alert, animated: true, completion: nil)
