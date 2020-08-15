@@ -11,11 +11,22 @@ import UIKit
 class GameViewController: UIViewController {
     
     @IBOutlet weak var liftingBear: UIImageView!
-    @IBOutlet weak var scoreLabel: UILabel!
+    //@IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var scoreProgress: UIProgressView!
     var currScore : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //progress bar 높이 설정
+        scoreProgress.transform = CGAffineTransform(scaleX: 1, y: 5)
+        
+        //progress bar border 둥글게
+        scoreProgress.layer.cornerRadius = 8
+        scoreProgress.clipsToBounds = true
+        scoreProgress.layer.sublayers![1].cornerRadius = 8
+        scoreProgress.subviews[1].clipsToBounds = true
+        
         
         // Do any additional setup after loading the view.
     }
@@ -23,14 +34,17 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         
+        //progress bar  초기화
+        scoreProgress.progress = 0.0
+        
         
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (t1) in
             
             let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
             
             var chickenbreast = UIImageView()
-            //chickenbreast.image = UIImage(named: "Grilled-Chicken-Breast")
-            //chickenbreast.frame = CGRect(x: randomNum + 30, y: 30, width: 40, height: 40)
+            chickenbreast.image = UIImage(named: "Grilled-Chicken-Breast")
+            chickenbreast.frame = CGRect(x: randomNum + 30, y: 30, width: 40, height: 40)
             self.ChickenMoveX(chickenimage: chickenbreast, randomNum: randomNum)
             self.view.addSubview(chickenbreast)
             
@@ -78,6 +92,7 @@ class GameViewController: UIViewController {
             }))
             
             self.present(alert, animated: true, completion: nil)
+
         }
     }
     
@@ -87,8 +102,26 @@ class GameViewController: UIViewController {
         let halfWidthChicken = chickenimage.bounds.size.width/2
         if (chickenimage.center.x - halfWidthChicken > self.liftingBear.center.x - halfWidthLB && chickenimage.center.x + halfWidthChicken < self.liftingBear.center.x + halfWidthLB && chickenimage.center.y > self.liftingBear.center.y - halfHeightLB) {
             
-            self.currScore += 1
-            self.scoreLabel.text = "\(self.currScore)"
+            self.scoreProgress.progress += 0.1
+            //self.currScore += 1
+            //self.scoreLabel.text = "\(self.currScore)"
+            
+            //진화
+            if self.scoreProgress.progress >= 1.0 {
+                self.liftingBear.image = UIImage(named: "weightlifting")
+                
+                //레벨업 알려주기
+                let alert = UIAlertController(title: "Level Up", message: "🎉축하축하🎉", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
+                    self.scoreProgress.progress = 0.0
+                   
+                    
+                }))
+                
+                self.present(alert, animated: true, completion: nil)
+                //self.scoreProgress.progress = 0.0
+                
+            }
             
             chickenimage.center.y = -1000000
             
