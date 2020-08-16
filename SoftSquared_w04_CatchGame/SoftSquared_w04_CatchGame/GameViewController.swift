@@ -37,21 +37,28 @@ class GameViewController: UIViewController {
         //progress bar  초기화
         scoreProgress.progress = 0.0
         
-        
+        //닭가슴살이랑 피자 fall
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (t1) in
             
             let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
+            let randomNum2 = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
             
-            var chickenbreast = UIImageView()
+            let chickenbreast = UIImageView()
+            let pizza = UIImageView()
             chickenbreast.image = UIImage(named: "Grilled-Chicken-Breast")
+            pizza.image = UIImage(named: "pizza")
             chickenbreast.frame = CGRect(x: randomNum + 30, y: 30, width: 40, height: 40)
+            pizza.frame = CGRect(x: randomNum2 - 30, y: 30, width: 40, height: 40)
             self.ChickenMoveX(chickenimage: chickenbreast, randomNum: randomNum)
+            self.PizzaMoveX(pizzaimage: pizza, randomNum: randomNum2)
             self.view.addSubview(chickenbreast)
+            self.view.addSubview(pizza)
             
             //chicken fall을 하고 싶어
             Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (t2) in
                 //chickenbreast.center.y += 1
                 self.ChickenFall(chickenimage: chickenbreast)
+                self.ChickenFall(chickenimage: pizza)
                 
                 self.GameOver(chickenimage: chickenbreast, timer1: t1, timer2: t2)
                 self.EatChicken(chickenimage: chickenbreast)
@@ -69,9 +76,13 @@ class GameViewController: UIViewController {
     }
     
     func ChickenMoveX(chickenimage : UIImageView, randomNum : Int) {
-        
         chickenimage.image = UIImage(named: "Grilled-Chicken-Breast")
-        chickenimage.frame = CGRect(x: randomNum + 30, y: 30, width: 40, height: 40)
+        chickenimage.frame = CGRect(x: randomNum - 30, y: 30, width: 40, height: 40)
+    }
+    
+    func PizzaMoveX(pizzaimage : UIImageView, randomNum : Int) {
+        pizzaimage.image = UIImage(named: "pizza")
+        pizzaimage.frame = CGRect(x: randomNum + 30, y: 30, width: 40, height: 40)
     }
     
     func ChickenFall(chickenimage : UIImageView) {
