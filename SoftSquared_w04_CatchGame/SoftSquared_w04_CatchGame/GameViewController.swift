@@ -13,7 +13,6 @@ class GameViewController: UIViewController {
     @IBOutlet weak var liftingBear: UIImageView!
     //@IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var scoreProgress: UIProgressView!
-    @IBOutlet weak var testCheck: UILabel!
     var currScore : Int = 0
     
     override func viewDidLoad() {
@@ -36,7 +35,7 @@ class GameViewController: UIViewController {
         super.viewWillAppear(false)
         
         //progress bar  초기화
-        scoreProgress.progress = 0.0
+        scoreProgress.progress = 0.01
         
         //닭가슴살 fall
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (t1) in
@@ -68,7 +67,7 @@ class GameViewController: UIViewController {
             
         }
         
-        //닭가슴살 fall
+        //피자 fall
         Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { (t1) in
             
             let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
@@ -97,6 +96,7 @@ class GameViewController: UIViewController {
             self.liftingBear.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(GameViewController.BearMove(_:))))
         }
         
+        
     }
     
     func ChickenMoveX(chickenimage : UIImageView, randomNum : Int) {
@@ -111,11 +111,12 @@ class GameViewController: UIViewController {
     
     func ChickenFall(chickenimage : UIImageView) {
         chickenimage.center.y += 1
-        testCheck.text = "\(scoreProgress.progress)"
+        //testCheck.text = "\(scoreProgress.progress)" //확인용
+
     }
     
     func GameOver(chickenimage : UIImageView, timer1 : Timer, timer2 : Timer) {
-        if (chickenimage.center.y > self.liftingBear.center.y + self.liftingBear.center.y/5) {
+        if (chickenimage.center.y > self.liftingBear.center.y + self.liftingBear.center.y/5 || scoreProgress.progress == 0.0) {
             timer1.invalidate()
             timer2.invalidate()
             
@@ -150,7 +151,7 @@ class GameViewController: UIViewController {
                 //레벨업 알려주기
                 let alert = UIAlertController(title: "Level Up", message: "🎉축하축하🎉", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
-                    self.scoreProgress.progress = 0.0
+                    self.scoreProgress.progress = 0.01
                    
                     
                 }))
@@ -179,6 +180,7 @@ class GameViewController: UIViewController {
             
         }
     }
+    
     
     /* CGPoint
         - CGPoint 는 이차원 좌표계의 점을 정의하는 구조체

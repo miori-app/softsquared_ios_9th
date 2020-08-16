@@ -76,13 +76,6 @@
                                 <color key="progressTintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="trackTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjb-D7-t9k">
-                                <rect key="frame" x="245" y="206" width="67" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" red="0.93274229760000005" green="0.48862433430000002" blue="0.23909547919999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -104,7 +97,6 @@
                     <connections>
                         <outlet property="liftingBear" destination="VdA-J0-cEW" id="l1E-dz-jaE"/>
                         <outlet property="scoreProgress" destination="qUM-Rj-pz0" id="tBA-2n-oua"/>
-                        <outlet property="testCheck" destination="yjb-D7-t9k" id="fZm-wm-tNe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdT-xq-SoW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
