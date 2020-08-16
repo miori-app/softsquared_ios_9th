@@ -13,6 +13,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var liftingBear: UIImageView!
     //@IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var scoreProgress: UIProgressView!
+    @IBOutlet weak var testCheck: UILabel!
     var currScore : Int = 0
     
     override func viewDidLoad() {
@@ -37,31 +38,55 @@ class GameViewController: UIViewController {
         //progress bar  초기화
         scoreProgress.progress = 0.0
         
-        //닭가슴살이랑 피자 fall
+        //닭가슴살 fall
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (t1) in
             
             let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
-            let randomNum2 = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
+            //let randomNum2 = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
             
             let chickenbreast = UIImageView()
-            let pizza = UIImageView()
+            //let pizza = UIImageView()
             chickenbreast.image = UIImage(named: "Grilled-Chicken-Breast")
-            pizza.image = UIImage(named: "pizza")
+            //pizza.image = UIImage(named: "pizza")
             chickenbreast.frame = CGRect(x: randomNum + 30, y: 30, width: 40, height: 40)
-            pizza.frame = CGRect(x: randomNum2 - 30, y: 30, width: 40, height: 40)
+            //pizza.frame = CGRect(x: randomNum2 + 10, y: 30, width: 50, height: 50)
             self.ChickenMoveX(chickenimage: chickenbreast, randomNum: randomNum)
-            self.PizzaMoveX(pizzaimage: pizza, randomNum: randomNum2)
+            //self.PizzaMoveX(pizzaimage: pizza, randomNum: randomNum2)
             self.view.addSubview(chickenbreast)
-            self.view.addSubview(pizza)
+            //self.view.addSubview(pizza)
             
             //chicken fall을 하고 싶어
             Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (t2) in
                 //chickenbreast.center.y += 1
                 self.ChickenFall(chickenimage: chickenbreast)
-                self.ChickenFall(chickenimage: pizza)
+                //self.ChickenFall(chickenimage: pizza)
                 
                 self.GameOver(chickenimage: chickenbreast, timer1: t1, timer2: t2)
                 self.EatChicken(chickenimage: chickenbreast)
+                
+            }
+            
+        }
+        
+        //닭가슴살 fall
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { (t1) in
+            
+            let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
+            
+            let pizza = UIImageView()
+            pizza.image = UIImage(named: "pizza")
+            pizza.frame = CGRect(x: randomNum + 30, y: 30, width: 50, height: 50)
+            self.PizzaMoveX(pizzaimage: pizza, randomNum: randomNum)
+            self.view.addSubview(pizza)
+            
+            //chicken fall을 하고 싶어
+            Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (t2) in
+                //chickenbreast.center.y += 1
+                self.ChickenFall(chickenimage: pizza)
+                //self.ChickenFall(chickenimage: pizza)
+                
+                //self.GameOver(chickenimage: pizza, timer1: t1, timer2: t2)
+                self.EatPizza(pizzaimage: pizza)
                 
             }
             
@@ -71,7 +96,6 @@ class GameViewController: UIViewController {
         DispatchQueue.global(qos: .userInteractive).async {
             self.liftingBear.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(GameViewController.BearMove(_:))))
         }
-        
         
     }
     
@@ -87,6 +111,7 @@ class GameViewController: UIViewController {
     
     func ChickenFall(chickenimage : UIImageView) {
         chickenimage.center.y += 1
+        testCheck.text = "\(scoreProgress.progress)"
     }
     
     func GameOver(chickenimage : UIImageView, timer1 : Timer, timer2 : Timer) {
@@ -136,6 +161,21 @@ class GameViewController: UIViewController {
             }
             
             chickenimage.center.y = -1000000
+            
+        }
+    }
+    
+    func EatPizza(pizzaimage : UIImageView) {
+        let halfWidthLB = self.liftingBear.bounds.size.width/2
+        let halfHeightLB = self.liftingBear.bounds.size.height/2
+        let halfWidthPizza = pizzaimage.bounds.size.width/2
+        if (pizzaimage.center.x - halfWidthPizza > self.liftingBear.center.x - halfWidthLB && pizzaimage.center.x + halfWidthPizza < self.liftingBear.center.x + halfWidthLB && pizzaimage.center.y > self.liftingBear.center.y - halfHeightLB) {
+            
+            self.scoreProgress.progress -= 0.1
+            //self.currScore += 1
+            //self.scoreLabel.text = "\(self.currScore)"
+            
+            pizzaimage.center.y = -1000000
             
         }
     }
