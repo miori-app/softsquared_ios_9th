@@ -10,7 +10,8 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    @IBOutlet weak var liftingBear: UIImageView!
+    //@IBOutlet weak var liftingBear: UIImageView!
+    var liftingBear = UIImageView()
     //@IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var scoreProgress: UIProgressView!
     var currScore : Int = 0
@@ -18,6 +19,12 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //곰움직임 수정을 위한 코드 수정
+        liftingBear.image = UIImage(named: "liftingbear_cute")
+        liftingBear.frame = CGRect(x: UIScreen.main.bounds.size.width/4, y: UIScreen.main.bounds.height - 250, width: 200, height: 250)
+        liftingBear.isUserInteractionEnabled = true
+        self.view.addSubview(liftingBear)
         
         //progress bar 높이 설정
         scoreProgress.transform = CGAffineTransform(scaleX: 1, y: 5)
@@ -36,12 +43,12 @@ class GameViewController: UIViewController {
         super.viewWillAppear(false)
         
         //progress bar  초기화
-        scoreProgress.progress = 0.1
+        scoreProgress.progress = 0.01
         
         //닭가슴살 fall
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (t1) in
             
-            let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
+            let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-110)))+1)
             //let randomNum2 = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
             
             let chickenbreast = UIImageView()
@@ -71,7 +78,7 @@ class GameViewController: UIViewController {
         //피자 fall
         Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { (t3) in
             
-            let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
+            let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-110)))+1)
             
             let pizza = UIImageView()
             pizza.image = UIImage(named: "pizza")
@@ -174,21 +181,7 @@ class GameViewController: UIViewController {
                 let alert = UIAlertController(title: "Level Up", message: "🎉축하축하🎉", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
                     self.scoreProgress.progress = 0.01
-                    
-                    if self.scoreProgress.progress >= 1.0 {
-                        
-                        let alert = UIAlertController(title: "🎉Complete🎉", message: "찢었다!!", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action) in
-                            
-                            //let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                            
-                            //self.present(home, animated: true, completion: nil)
-                            self.dismiss(animated: true, completion: nil)
-                        }))
-                        
-                        self.present(alert, animated: true, completion: nil)
-                    }
-                    
+                                    
                 }))
                 
                 self.present(alert, animated: true, completion: nil)

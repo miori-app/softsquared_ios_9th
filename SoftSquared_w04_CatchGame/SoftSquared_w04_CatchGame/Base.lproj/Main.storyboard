@@ -60,14 +60,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossfit_background" translatesAutoresizingMaskIntoConstraints="NO" id="Qc3-61-fcS">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liftingbear_cute" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-J0-cEW">
-                                <rect key="frame" x="95" y="601" width="224" height="261"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="224" id="XX0-fQ-XkK"/>
-                                    <constraint firstAttribute="width" secondItem="VdA-J0-cEW" secondAttribute="height" multiplier="224:261" id="lUB-12-Cp6"/>
-                                    <constraint firstAttribute="height" constant="261" id="w7m-Bk-AfV"/>
-                                </constraints>
-                            </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="qUM-Rj-pz0">
                                 <rect key="frame" x="20" y="85" width="374" height="3"/>
                                 <constraints>
@@ -84,9 +76,6 @@
                             <constraint firstItem="Qc3-61-fcS" firstAttribute="leading" secondItem="Qib-XF-hl0" secondAttribute="leading" id="5UJ-qG-3CZ"/>
                             <constraint firstItem="qUM-Rj-pz0" firstAttribute="leading" secondItem="nZc-lr-sig" secondAttribute="leadingMargin" id="LSn-mV-5So"/>
                             <constraint firstItem="qUM-Rj-pz0" firstAttribute="centerX" secondItem="nZc-lr-sig" secondAttribute="centerX" id="M36-4e-bC2"/>
-                            <constraint firstItem="VdA-J0-cEW" firstAttribute="leading" secondItem="Qib-XF-hl0" secondAttribute="leading" constant="95" id="THG-Qz-QcS"/>
-                            <constraint firstItem="VdA-J0-cEW" firstAttribute="bottom" secondItem="Qib-XF-hl0" secondAttribute="bottom" id="Th1-ZY-rOa"/>
-                            <constraint firstItem="Qib-XF-hl0" firstAttribute="trailing" secondItem="VdA-J0-cEW" secondAttribute="trailing" constant="95" id="ipQ-Zc-Dcx"/>
                             <constraint firstItem="Qib-XF-hl0" firstAttribute="trailing" secondItem="Qc3-61-fcS" secondAttribute="trailing" id="jeE-v2-sxQ"/>
                             <constraint firstItem="qUM-Rj-pz0" firstAttribute="top" secondItem="Qib-XF-hl0" secondAttribute="top" constant="41" id="op2-Ax-YiV"/>
                             <constraint firstItem="Qib-XF-hl0" firstAttribute="bottom" secondItem="Qc3-61-fcS" secondAttribute="bottom" id="pzJ-bw-Vfs"/>
@@ -95,7 +84,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="fqP-s3-bYU"/>
                     <connections>
-                        <outlet property="liftingBear" destination="VdA-J0-cEW" id="l1E-dz-jaE"/>
                         <outlet property="scoreProgress" destination="qUM-Rj-pz0" id="tBA-2n-oua"/>
                     </connections>
                 </viewController>
@@ -106,7 +94,6 @@
     </scenes>
     <resources>
         <image name="crossfit_background" width="2163" height="2560"/>
-        <image name="liftingbear_cute" width="1407" height="1500"/>
         <image name="startButton" width="260" height="261"/>
     </resources>
 </document>
