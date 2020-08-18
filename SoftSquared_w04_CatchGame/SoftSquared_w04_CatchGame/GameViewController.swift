@@ -14,6 +14,7 @@ class GameViewController: UIViewController {
     //@IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var scoreProgress: UIProgressView!
     var currScore : Int = 0
+    var levelCheck : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,7 @@ class GameViewController: UIViewController {
         super.viewWillAppear(false)
         
         //progress bar  초기화
-        scoreProgress.progress = 0.01
+        scoreProgress.progress = 0.1
         
         //닭가슴살 fall
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (t1) in
@@ -68,7 +69,7 @@ class GameViewController: UIViewController {
         }
         
         //피자 fall
-        Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { (t1) in
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { (t3) in
             
             let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
             
@@ -79,12 +80,11 @@ class GameViewController: UIViewController {
             self.view.addSubview(pizza)
             
             //chicken fall을 하고 싶어
-            Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (t2) in
+            Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (t4) in
                 //chickenbreast.center.y += 1
                 self.ChickenFall(chickenimage: pizza)
                 //self.ChickenFall(chickenimage: pizza)
-                
-                //self.GameOver(chickenimage: pizza, timer1: t1, timer2: t2)
+                self.GameOver(chickenimage: pizza, timer1: t3, timer2: t4)
                 self.EatPizza(pizzaimage: pizza)
                 
             }
@@ -112,26 +112,46 @@ class GameViewController: UIViewController {
     func ChickenFall(chickenimage : UIImageView) {
         chickenimage.center.y += 1
         //testCheck.text = "\(scoreProgress.progress)" //확인용
-
+        
     }
     
     func GameOver(chickenimage : UIImageView, timer1 : Timer, timer2 : Timer) {
-        if (chickenimage.center.y > self.liftingBear.center.y + self.liftingBear.center.y/5 || scoreProgress.progress == 0.0) {
-            timer1.invalidate()
-            timer2.invalidate()
+        //치킨이미지가 땅에 닿으면 게임오버 (==못먹으면)
+        if chickenimage.image == UIImage(named: "Grilled-Chicken-Breast") {
+            if (chickenimage.center.y > self.liftingBear.center.y + self.liftingBear.center.y/5 || scoreProgress.progress == 0.0) {
+                timer1.invalidate()
+                timer2.invalidate()
             
-            let alert = UIAlertController(title: "Game Over", message: "try again?", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action) in
-                
-                //let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-                
-                //self.present(home, animated: true, completion: nil)
-                self.dismiss(animated: true, completion: nil)
-            }))
             
-            self.present(alert, animated: true, completion: nil)
-
-        }
+                            let alert = UIAlertController(title: "Game Over", message: "try again?", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action) in
+            
+                                //let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            
+                                //self.present(home, animated: true, completion: nil)
+                                self.dismiss(animated: true, completion: nil)
+                            }))
+            
+                            self.present(alert, animated: true, completion: nil)
+            
+                        }
+        } else {
+            if (scoreProgress.progress == 0.0) {
+                timer1.invalidate()
+                timer2.invalidate()
+                
+                let alert = UIAlertController(title: "Game Over", message: "try again?", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action) in
+                    
+                    //let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                    
+                    //self.present(home, animated: true, completion: nil)
+                    self.dismiss(animated: true, completion: nil)
+                }))
+                
+                self.present(alert, animated: true, completion: nil)
+            }}
+        
     }
     
     func EatChicken(chickenimage : UIImageView) {
@@ -144,20 +164,36 @@ class GameViewController: UIViewController {
             //self.currScore += 1
             //self.scoreLabel.text = "\(self.currScore)"
             
-            //진화
+            //진화(level up)
             if self.scoreProgress.progress >= 1.0 {
+                levelCheck = 1
                 self.liftingBear.image = UIImage(named: "weightlifting")
+                
                 
                 //레벨업 알려주기
                 let alert = UIAlertController(title: "Level Up", message: "🎉축하축하🎉", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
                     self.scoreProgress.progress = 0.01
-                   
+                    
+                    if self.scoreProgress.progress >= 1.0 {
+                        
+                        let alert = UIAlertController(title: "🎉Complete🎉", message: "찢었다!!", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action) in
+                            
+                            //let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                            
+                            //self.present(home, animated: true, completion: nil)
+                            self.dismiss(animated: true, completion: nil)
+                        }))
+                        
+                        self.present(alert, animated: true, completion: nil)
+                    }
                     
                 }))
                 
                 self.present(alert, animated: true, completion: nil)
                 //self.scoreProgress.progress = 0.0
+                
                 
             }
             
@@ -183,18 +219,18 @@ class GameViewController: UIViewController {
     
     
     /* CGPoint
-        - CGPoint 는 이차원 좌표계의 점을 정의하는 구조체
+     - CGPoint 는 이차원 좌표계의 점을 정의하는 구조체
      */
     
     /* UIPanGestureRecognizer
      
      1. 먼저 translation메소드를 통해 이 Pan Gesture로 인해 변환되는 좌표 값을 얻어와야합니다.
      2. 그리고 우리의 이미지View에 이 translation을 적용해줘야합니다.
-
-        - PanGesture : 패닝(드래그)하는 Gesture를 찾으며, UIgestureRecognizer의 구체적 하위클래스
-        출처: https://zeddios.tistory.com/356 [ZeddiOS]
-        - translation : translation의 설명을 하자면, 명시된 View(즉, 파라미터로 받은 view)의 좌표 시스템에서의 pan gesture의 변환(translation)입니다.
-        출처: https://zeddios.tistory.com/356 [ZeddiOS]
+     
+     - PanGesture : 패닝(드래그)하는 Gesture를 찾으며, UIgestureRecognizer의 구체적 하위클래스
+     출처: https://zeddios.tistory.com/356 [ZeddiOS]
+     - translation : translation의 설명을 하자면, 명시된 View(즉, 파라미터로 받은 view)의 좌표 시스템에서의 pan gesture의 변환(translation)입니다.
+     출처: https://zeddios.tistory.com/356 [ZeddiOS]
      
      */
     
