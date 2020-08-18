@@ -69,7 +69,7 @@ class GameViewController: UIViewController {
                 //self.ChickenFall(chickenimage: pizza)
                 
                 self.GameOver(chickenimage: chickenbreast, timer1: t1, timer2: t2)
-                self.EatChicken(chickenimage: chickenbreast)
+                self.EatChicken(chickenimage: chickenbreast, timer1: t1, timer2: t2)
                 
             }
             
@@ -92,7 +92,7 @@ class GameViewController: UIViewController {
                 self.ChickenFall(chickenimage: pizza)
                 //self.ChickenFall(chickenimage: pizza)
                 self.GameOver(chickenimage: pizza, timer1: t3, timer2: t4)
-                self.EatPizza(pizzaimage: pizza)
+                self.EatPizza(pizzaimage: pizza, timer1: t3, timer2: t4)
                 
             }
             
@@ -128,20 +128,20 @@ class GameViewController: UIViewController {
             if (chickenimage.center.y > self.liftingBear.center.y + self.liftingBear.center.y/5 || scoreProgress.progress == 0.0) {
                 timer1.invalidate()
                 timer2.invalidate()
-            
-            
-                            let alert = UIAlertController(title: "Game Over", message: "try again?", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action) in
-            
-                                //let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-            
-                                //self.present(home, animated: true, completion: nil)
-                                self.dismiss(animated: true, completion: nil)
-                            }))
-            
-                            self.present(alert, animated: true, completion: nil)
-            
-                        }
+                
+                
+                let alert = UIAlertController(title: "Game Over", message: "try again?", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {(action) in
+                    
+                    //let home = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                    
+                    //self.present(home, animated: true, completion: nil)
+                    self.dismiss(animated: true, completion: nil)
+                }))
+                
+                self.present(alert, animated: true, completion: nil)
+                
+            }
         } else {
             if (scoreProgress.progress == 0.0) {
                 timer1.invalidate()
@@ -161,7 +161,7 @@ class GameViewController: UIViewController {
         
     }
     
-    func EatChicken(chickenimage : UIImageView) {
+    func EatChicken(chickenimage : UIImageView, timer1 : Timer, timer2 : Timer) {
         let halfWidthLB = self.liftingBear.bounds.size.width/2
         let halfHeightLB = self.liftingBear.bounds.size.height/2
         let halfWidthChicken = chickenimage.bounds.size.width/2
@@ -173,7 +173,8 @@ class GameViewController: UIViewController {
             
             //진화(level up)
             if self.scoreProgress.progress >= 1.0 {
-                levelCheck = 1
+//                timer1.invalidate()
+//                timer2.invalidate()
                 self.liftingBear.image = UIImage(named: "weightlifting")
                 
                 
@@ -181,7 +182,9 @@ class GameViewController: UIViewController {
                 let alert = UIAlertController(title: "Level Up", message: "🎉축하축하🎉", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
                     self.scoreProgress.progress = 0.01
-                                    
+//                    timer1.fire()
+//                    timer2.fire()
+                    
                 }))
                 
                 self.present(alert, animated: true, completion: nil)
@@ -195,7 +198,7 @@ class GameViewController: UIViewController {
         }
     }
     
-    func EatPizza(pizzaimage : UIImageView) {
+    func EatPizza(pizzaimage : UIImageView, timer1 : Timer, timer2 : Timer) {
         let halfWidthLB = self.liftingBear.bounds.size.width/2
         let halfHeightLB = self.liftingBear.bounds.size.height/2
         let halfWidthPizza = pizzaimage.bounds.size.width/2
@@ -208,8 +211,12 @@ class GameViewController: UIViewController {
             pizzaimage.center.y = -1000000
             
         }
+        
+//        if self.scoreProgress.progress >= 1.0 {
+//            timer1.invalidate()
+//            timer2.invalidate()
+//        }
     }
-    
     
     /* CGPoint
      - CGPoint 는 이차원 좌표계의 점을 정의하는 구조체
