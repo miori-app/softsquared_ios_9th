@@ -52,15 +52,19 @@ class GameViewController: UIViewController {
             //let randomNum2 = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-100)))+1)
             
             let chickenbreast = UIImageView()
-            //let pizza = UIImageView()
-            chickenbreast.image = UIImage(named: "Grilled-Chicken-Breast")
-            //pizza.image = UIImage(named: "pizza")
-            chickenbreast.frame = CGRect(x: randomNum + 30, y: 30, width: 40, height: 40)
-            //pizza.frame = CGRect(x: randomNum2 + 10, y: 30, width: 50, height: 50)
-            self.ChickenMoveX(chickenimage: chickenbreast, randomNum: randomNum)
-            //self.PizzaMoveX(pizzaimage: pizza, randomNum: randomNum2)
-            self.view.addSubview(chickenbreast)
-            //self.view.addSubview(pizza)
+            DispatchQueue.main.async {
+                
+                //let pizza = UIImageView()
+                chickenbreast.image = UIImage(named: "Grilled-Chicken-Breast")
+                //pizza.image = UIImage(named: "pizza")
+                chickenbreast.frame = CGRect(x: randomNum + 30, y: 30, width: 40, height: 40)
+                //pizza.frame = CGRect(x: randomNum2 + 10, y: 30, width: 50, height: 50)
+                self.ChickenMoveX(chickenimage: chickenbreast, randomNum: randomNum)
+                //self.PizzaMoveX(pizzaimage: pizza, randomNum: randomNum2)
+                self.view.addSubview(chickenbreast)
+                //self.view.addSubview(pizza)
+            }
+            
             
             //chicken fall을 하고 싶어
             Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (t2) in
@@ -173,8 +177,8 @@ class GameViewController: UIViewController {
             
             //진화(level up)
             if self.scoreProgress.progress >= 1.0 {
-//                timer1.invalidate()
-//                timer2.invalidate()
+                //                timer1.invalidate()
+                //                timer2.invalidate()
                 self.liftingBear.image = UIImage(named: "weightlifting")
                 
                 
@@ -182,8 +186,8 @@ class GameViewController: UIViewController {
                 let alert = UIAlertController(title: "Level Up", message: "🎉축하축하🎉", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
                     self.scoreProgress.progress = 0.01
-//                    timer1.fire()
-//                    timer2.fire()
+                    //                    timer1.fire()
+                    //                    timer2.fire()
                     
                 }))
                 
@@ -212,10 +216,10 @@ class GameViewController: UIViewController {
             
         }
         
-//        if self.scoreProgress.progress >= 1.0 {
-//            timer1.invalidate()
-//            timer2.invalidate()
-//        }
+        //        if self.scoreProgress.progress >= 1.0 {
+        //            timer1.invalidate()
+        //            timer2.invalidate()
+        //        }
     }
     
     /* CGPoint
