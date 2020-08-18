@@ -85,10 +85,13 @@ class GameViewController: UIViewController {
             let randomNum = Int(arc4random_uniform(UInt32((Int)(UIScreen.main.bounds.size.width-110)))+1)
             
             let pizza = UIImageView()
-            pizza.image = UIImage(named: "pizza")
-            pizza.frame = CGRect(x: randomNum + 30, y: 30, width: 50, height: 50)
-            self.PizzaMoveX(pizzaimage: pizza, randomNum: randomNum)
-            self.view.addSubview(pizza)
+            
+            DispatchQueue.main.async {
+                pizza.image = UIImage(named: "pizza")
+                pizza.frame = CGRect(x: randomNum + 30, y: 30, width: 50, height: 50)
+                self.PizzaMoveX(pizzaimage: pizza, randomNum: randomNum)
+                self.view.addSubview(pizza)
+            }
             
             //chicken fall을 하고 싶어
             Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { (t4) in
@@ -102,10 +105,12 @@ class GameViewController: UIViewController {
             
         }
         
+        //움직여라 곰아
+        self.liftingBear.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(GameViewController.BearMove(_:))))
         //곰의 움직임 쓰레드로 보내줘!! (제스처 받아서 움직여)
-        DispatchQueue.global(qos: .userInteractive).async {
-            self.liftingBear.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(GameViewController.BearMove(_:))))
-        }
+//        DispatchQueue.global(qos: .userInteractive).async {
+//            self.liftingBear.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(GameViewController.BearMove(_:))))
+//        }
         
         
     }
@@ -185,6 +190,7 @@ class GameViewController: UIViewController {
                 //레벨업 알려주기
                 let alert = UIAlertController(title: "Level Up", message: "🎉축하축하🎉", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
+                    self.levelCheck += 1
                     self.scoreProgress.progress = 0.01
                     //                    timer1.fire()
                     //                    timer2.fire()
@@ -193,12 +199,21 @@ class GameViewController: UIViewController {
                 
                 self.present(alert, animated: true, completion: nil)
                 //self.scoreProgress.progress = 0.0
+            }
+            if self.scoreProgress.progress >= 1.0 && self.levelCheck == 1 {
+                //레벨업 알려주기
+                let alert = UIAlertController(title: "호잇", message: "🎉축하축하🎉", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
+                    self.dismiss(animated: true, completion: nil)
+                    //                    timer1.fire()
+                    //                    timer2.fire()
+                    
+                }))
                 
-                
+                self.present(alert, animated: true, completion: nil)
             }
             
             chickenimage.center.y = -1000000
-            
         }
     }
     
