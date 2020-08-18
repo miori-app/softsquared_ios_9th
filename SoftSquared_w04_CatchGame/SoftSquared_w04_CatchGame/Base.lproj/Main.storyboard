@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossfit_background" translatesAutoresizingMaskIntoConstraints="NO" id="q7G-id-jRf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossfit_background" translatesAutoresizingMaskIntoConstraints="NO" id="q7G-id-jRf">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x8-ce-I0y">
@@ -32,6 +32,22 @@
                                     <segue destination="avk-9i-1sP" kind="presentation" modalPresentationStyle="fullScreen" id="cRF-dF-wMf"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossfitgames" translatesAutoresizingMaskIntoConstraints="NO" id="a8z-zP-pHW">
+                                <rect key="frame" x="160" y="86" width="234" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="Ltu-gq-lQM"/>
+                                    <constraint firstAttribute="width" secondItem="a8z-zP-pHW" secondAttribute="height" multiplier="13:12" id="lWX-XK-tfr"/>
+                                    <constraint firstAttribute="width" constant="234" id="xLw-6b-6nU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muscle" translatesAutoresizingMaskIntoConstraints="NO" id="98E-1n-EGa">
+                                <rect key="frame" x="157" y="310" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="GoG-qe-1du"/>
+                                    <constraint firstAttribute="height" constant="128" id="RyQ-w0-TFZ"/>
+                                    <constraint firstAttribute="width" secondItem="98E-1n-EGa" secondAttribute="height" multiplier="15:8" id="lpe-nI-Lmc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -40,7 +56,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q7G-id-jRf" secondAttribute="trailing" id="771-mW-UIN"/>
                             <constraint firstItem="6x8-ce-I0y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8ZN-6t-DfC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q7G-id-jRf" secondAttribute="bottom" id="LQa-4g-eFk"/>
+                            <constraint firstItem="98E-1n-EGa" firstAttribute="top" secondItem="a8z-zP-pHW" secondAttribute="bottom" constant="8" id="Ldh-3L-K7j"/>
                             <constraint firstItem="q7G-id-jRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MTT-ox-mbP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="98E-1n-EGa" secondAttribute="trailing" constant="17" id="fsF-OD-cch"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a8z-zP-pHW" secondAttribute="trailing" constant="20" id="kNT-8P-JYX"/>
+                            <constraint firstItem="a8z-zP-pHW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="s1g-wU-Mw8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -94,6 +114,8 @@
     </scenes>
     <resources>
         <image name="crossfit_background" width="2163" height="2560"/>
+        <image name="crossfitgames" width="1631" height="1457"/>
+        <image name="muscle" width="382" height="251"/>
         <image name="startButton" width="260" height="261"/>
     </resources>
 </document>
