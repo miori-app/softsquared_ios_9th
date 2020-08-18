@@ -7,6 +7,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Sp0-fH-ryd">
+            <objects>
+                <viewController id="OQS-WJ-Cjb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DNw-rI-ieu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossfit_background" translatesAutoresizingMaskIntoConstraints="NO" id="zsr-Kd-Rss">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="닭가슴살을 먹어 근손실을 막으세요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjz-zy-Qlc">
+                                <rect key="frame" x="20" y="145" width="277" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="피자를 먹게 되면 hp가 감소되요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8T-V7-Qz0">
+                                <rect key="frame" x="20" y="188" width="250" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zsr-Kd-Rss" firstAttribute="top" secondItem="ZZ0-Na-8UR" secondAttribute="top" id="XJm-tJ-rJu"/>
+                            <constraint firstItem="zsr-Kd-Rss" firstAttribute="leading" secondItem="ZZ0-Na-8UR" secondAttribute="leading" id="gDM-AF-AsW"/>
+                            <constraint firstItem="ZZ0-Na-8UR" firstAttribute="bottom" secondItem="zsr-Kd-Rss" secondAttribute="bottom" id="klp-3W-h3P"/>
+                            <constraint firstItem="ZZ0-Na-8UR" firstAttribute="trailing" secondItem="zsr-Kd-Rss" secondAttribute="trailing" id="kme-kB-e19"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZZ0-Na-8UR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A57-bg-dy6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4k-h3-VAW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="-333"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -48,6 +89,18 @@
                                     <constraint firstAttribute="width" secondItem="98E-1n-EGa" secondAttribute="height" multiplier="15:8" id="lpe-nI-Lmc"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fph-2C-iug">
+                                <rect key="frame" x="139" y="606" width="136" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="Trf-SJ-ZZ4"/>
+                                    <constraint firstAttribute="width" secondItem="fph-2C-iug" secondAttribute="height" multiplier="34:27" id="gkg-Sc-dTd"/>
+                                    <constraint firstAttribute="height" constant="108" id="yzm-aB-Re4"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="how-to-play2"/>
+                                <connections>
+                                    <segue destination="OQS-WJ-Cjb" kind="show" id="oRP-lk-8ZT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -55,11 +108,14 @@
                             <constraint firstItem="6x8-ce-I0y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Uy-r2-JYv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q7G-id-jRf" secondAttribute="trailing" id="771-mW-UIN"/>
                             <constraint firstItem="6x8-ce-I0y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8ZN-6t-DfC"/>
+                            <constraint firstItem="fph-2C-iug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BwP-YN-M5Z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q7G-id-jRf" secondAttribute="bottom" id="LQa-4g-eFk"/>
                             <constraint firstItem="98E-1n-EGa" firstAttribute="top" secondItem="a8z-zP-pHW" secondAttribute="bottom" constant="8" id="Ldh-3L-K7j"/>
                             <constraint firstItem="q7G-id-jRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MTT-ox-mbP"/>
+                            <constraint firstItem="6x8-ce-I0y" firstAttribute="top" secondItem="fph-2C-iug" secondAttribute="bottom" constant="8" id="YcG-sB-urG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="98E-1n-EGa" secondAttribute="trailing" constant="17" id="fsF-OD-cch"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a8z-zP-pHW" secondAttribute="trailing" constant="20" id="kNT-8P-JYX"/>
+                            <constraint firstItem="fph-2C-iug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nFb-Ao-VUP"/>
                             <constraint firstItem="a8z-zP-pHW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="s1g-wU-Mw8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -109,12 +165,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdT-xq-SoW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847.82608695652175" y="136.60714285714286"/>
+            <point key="canvasLocation" x="1049" y="361"/>
         </scene>
     </scenes>
     <resources>
         <image name="crossfit_background" width="2163" height="2560"/>
         <image name="crossfitgames" width="1631" height="1457"/>
+        <image name="how-to-play2" width="500" height="200"/>
         <image name="muscle" width="382" height="251"/>
         <image name="startButton" width="260" height="261"/>
     </resources>
