@@ -11,7 +11,11 @@ import UIKit
 class GameViewController: UIViewController {
     
     //@IBOutlet weak var liftingBear: UIImageView!
+    /*
+     이렇게 해야 곰 움직임 자연스러움
+     */
     var liftingBear = UIImageView()
+    
     //@IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var scoreProgress: UIProgressView!
     var currScore : Int = 0
@@ -181,7 +185,7 @@ class GameViewController: UIViewController {
             //self.scoreLabel.text = "\(self.currScore)"
             
             //진화(level up)
-            if self.scoreProgress.progress >= 1.0 {
+            if self.scoreProgress.progress >= 1.0 && self.levelCheck == 0 {
                 //                timer1.invalidate()
                 //                timer2.invalidate()
                 self.liftingBear.image = UIImage(named: "weightlifting")
@@ -202,8 +206,8 @@ class GameViewController: UIViewController {
             }
             if self.scoreProgress.progress >= 1.0 && self.levelCheck == 1 {
                 //레벨업 알려주기
-                let alert = UIAlertController(title: "호잇", message: "🎉축하축하🎉", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
+                let alert = UIAlertController(title: "🎉Complete🎉", message: "🏋🏻‍♀️근손실을 막았어요🏋🏻‍♀️", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "휴식하러가기", style: .default, handler: {(action) in
                     self.dismiss(animated: true, completion: nil)
                     //                    timer1.fire()
                     //                    timer2.fire()
