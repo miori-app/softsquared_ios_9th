@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'SoftSquared_w05_network' do
+  pod 'AFNetworking', '~> 2.6'
+  pod 'ORStackView', '~> 3.0'
+  pod 'SwiftyJSON', '~> 2.3'
+  pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'AlamofireNetworkActivityIndicator'
+end
