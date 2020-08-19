@@ -1,9 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-SoftSquared_w05_network/Pods-SoftSquared_w05_network-frameworks.sh
-${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
-${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework
-${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework
-${BUILT_PRODUCTS_DIR}/FLKAutoLayout/FLKAutoLayout.framework
-${BUILT_PRODUCTS_DIR}/ORStackView/ORStackView.framework
-${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework
-${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
