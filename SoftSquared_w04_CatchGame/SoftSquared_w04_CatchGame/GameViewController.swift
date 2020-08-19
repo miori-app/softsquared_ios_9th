@@ -195,7 +195,7 @@ class GameViewController: UIViewController {
                 let alert = UIAlertController(title: "Level Up", message: "🎉축하축하🎉", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "계속하기", style: .default, handler: {(action) in
                     self.levelCheck += 1
-                    self.scoreProgress.progress = 0.01
+                    self.scoreProgress.progress = 0.1
                     //                    timer1.fire()
                     //                    timer2.fire()
                     
