@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Weather View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoftSquared_w05_weather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="SoftSquared_w05_weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,18 +23,27 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pws-iY-MhJ" secondAttribute="height" multiplier="1:1" id="xmc-U4-6jP"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEE-FA-J2z">
                                         <rect key="frame" x="0.0" y="216" width="200" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8by-G8-YVp">
                                         <rect key="frame" x="0.0" y="262" width="200" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -50,10 +59,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ENJ-ei-wsv">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="location.fill" catalog="system" id="lCM-b2-88u"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yxh-45-B3Q"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="location.fill" catalog="system" id="lCM-b2-88u">
+                            <connections>
+                                <action selector="locationTapped:" destination="BYZ-38-t0r" id="mXS-lb-zhr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="yxh-45-B3Q">
+                            <connections>
+                                <action selector="addTapped:" destination="BYZ-38-t0r" id="8ZA-Qh-KAX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="detailLabel" destination="8by-G8-YVp" id="6b9-6s-lhD"/>
+                        <outlet property="tempLabel" destination="cEE-FA-J2z" id="VDW-9A-4YF"/>
+                        <outlet property="weatherImage" destination="pws-iY-MhJ" id="ga4-Aw-Jy4"/>
                         <segue destination="rh1-Lv-4g4" kind="presentation" id="URN-Aq-NOO"/>
                     </connections>
                 </viewController>

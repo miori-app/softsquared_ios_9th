@@ -12,7 +12,7 @@ struct WeatherData : Decodable {
     
     let cityName : String
     let main : Main
-    let weather : Weather
+    let weather : [Weather]
     
 }
 
