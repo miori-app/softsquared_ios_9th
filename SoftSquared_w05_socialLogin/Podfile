@@ -1,0 +1,15 @@
+platform :ios, '13.6'
+use_frameworks!
+
+target 'SoftSquared_w05_SocialLogin' do
+  pod 'AFNetworking', '~> 2.6'
+  pod 'ORStackView', '~> 3.0'
+  pod 'SwiftyJSON', '~> 4.0'
+
+  pod 'KakaoSDKCommon'
+  pod 'KakaoSDKAuth'
+  pod 'KakaoSDKUser'
+  pod 'KakaoSDKTalk'
+
+  pod 'naveridlogin-sdk-ios'
+end
