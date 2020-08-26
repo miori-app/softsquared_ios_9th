@@ -12,7 +12,7 @@ import SwiftyJSON
 
 struct WeatherController {
     
-    private let API_KEY = "013e57e5a4fdfb7901cf58395cf115c0"
+    private let API_KEY = "your_api"
     //completion : @escaping (Result<WeatherData, Error>)->Void
     func fetchWeather(byCity city : String) {
         
