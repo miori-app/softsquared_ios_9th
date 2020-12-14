@@ -60,6 +60,7 @@ class MySkillAddVC : UIViewController, AddSkill  {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(false)
         
+        //내가 입력한 스킬이 스킬이보여지는 VC 에 반영해주는 코드 (핵심코드임!!)
         prevViewController?.tableView.reloadData()
     }
     
